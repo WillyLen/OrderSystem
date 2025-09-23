@@ -1,0 +1,36 @@
+﻿@model OrderSystem.Models.OtpEnrollment
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color:red;">@ViewBag.ErrorMessage</p>
+}
+
+<h2>OTP 驗證</h2>
+<p>您的 OTP 驗證碼是：<strong>@Model.otpCode</strong></p>
+<p>
+    驗證碼將在 <span id="countdown">@Model.expiryTime</span> 秒後過期。
+</p>
+
+@using (Html.BeginForm("VerifyOtp", "Auth", FormMethod.Post))
+{
+    @Html.Hidden("sessionId", Model.sessionId)
+    <label for="inputOtp">請輸入 OTP：</label>
+    <input type="text" name="inputOtp" maxlength="6" required />
+    <button type="submit">驗證</button>
+}
+
+<script>
+    var seconds = @Model.expiryTime;
+    var countdownElem = document.getElementById('countdown');
+    var timer = setInterval(function () {
+        seconds--;
+        countdownElem.textContent = seconds;
+        if (seconds <= 0) {
+            clearInterval(timer);
+            countdownElem.textContent = "已過期";
+            alert("OTP 已過期，請重新取得驗證碼！");
+            // 你可以選擇自動刷新或導向其他頁面
+            location.href = '@Url.Action("ShowOtp", "Auth", new { sessionId = Model.sessionId })';
+        }
+    }, 1000);
+</script>

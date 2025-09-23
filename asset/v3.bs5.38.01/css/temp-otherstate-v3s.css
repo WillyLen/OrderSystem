@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+  為了能以中文註解，一定要宣告為UTF-8
+*/
+/*------------------------------------------------------------------------*-
+made by CI - CTVD
+v3.0.0
+20210122
+copyright China Airlines
+-*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*-
+	$Globle
+-*------------------------------------------------------------------------*/
+/*所有元素採用border-box呈現，意思是:寬高的尺吋將包含內距與邊框尺吋*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*------------------------------------------------------------------------*-
+    $Globle > $General
+    做為這個樣版網頁基礎字型、文字顏色的基礎設定
+-*------------------------------------------------------------------------*/
+body {
+  color: #3a424b;
+  font-family: "Roboto", Arial, "Noto Sans", "Noto Sans CJK", "微軟正黑體", "Microsoft JhengHei","蘋果儷中黑","Microsoft Yahei", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*------------------------------------------------------------------------*-
+    $Structure
+    頁面Layout基礎結構
+-*------------------------------------------------------------------------*/
+/*頁面高度100% start*/
+html, body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #f4f3f1;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.containerblock,
+.containerblockcard,
+.containerblockcardtop{
+  position: relative;
+  width: 600px;
+  margin: 0px auto;
+  margin-bottom: 0.625rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  box-shadow:0 2px 10px #d2d3d2;
+  letter-spacing: 0.35px;
+  border-top: 10px solid #23569d;
+  border-radius: 5px;
+}
+.containerblock-lg{
+  width: 900px;
+}
+.containerblock-nobdrtop{
+  border-top: none;
+}
+.containerblockcard{
+  border-top: none;
+}
+
+@media (max-width: 1024px){
+  #wrapper {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 768px){
+	body{
+	  background-color: #fff;
+	}
+  #wrapper {
+    padding-top: 0;
+  }
+  .containerblock,
+  .containerblock-lg{
+  	  position: relative;
+  	  width: 100%;
+  	  margin: 0 auto;
+	    box-shadow:0 0px 0px #ddd;
+	    border-bottom: none;
+	}
+  .containerblockcard,
+  .containerblockcardtop{
+    width: 100%;
+  }
+}
+#htmlversion{
+  display: none;
+}
+/*------------------------------------------------------------------------*-
+    $Header
+-*------------------------------------------------------------------------*/
+#ci-logo{
+  margin-bottom: 0;
+  text-align: center;
+}
+#ci-logo-img{	
+  width: 210px;
+}
+#ci-ae-logo-img{
+  width: 320px;
+  margin: 0 -20px;
+}
+#page-title-mainlang{
+  margin: 0.625rem 0 0;
+  font-size: 1.875rem;
+  font-weight: normal;
+  line-height: 1.2;
+  color:#25272f;
+  text-align: center;
+  letter-spacing: 4px;
+}
+#page-title-sublang{
+  margin-bottom: 1.25rem;
+  color:#25272f;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#page-title-mainlang.pt-tw-text10{
+  font-size: 1.75rem;
+  letter-spacing: -0.1px;
+}
+
+/* #page-title-mainlang.pt-tw-text03{
+  font-size: 40px;
+  letter-spacing: 40px;
+  margin-right: -40px;
+}
+#page-title-mainlang.pt-tw-text04{
+  font-size: 36px;
+  letter-spacing: 43px;
+  margin-right: -43px;
+}
+#page-title-mainlang.pt-tw-text05{
+  font-size: 36px;
+  letter-spacing: 24px;
+  margin-right: -24px;
+}
+#page-title-mainlang.pt-tw-text06{
+  font-size: 32px;
+  letter-spacing: 15px;
+  margin-right: -15px;
+}
+#page-title-mainlang.pt-tw-text07{
+  font-size: 32px;
+  letter-spacing: 8px;
+  margin-right: -8px;
+}
+#page-title-mainlang.pt-tw-text08{
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+#page-title-mainlang.pt-tw-text09{
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+#page-title-mainlang.pt-tw-text10{
+  font-size: 28px;
+  letter-spacing: 0px;
+}
+#page-title-mainlang.pt-tw-text11{
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+#page-title-mainlang.pt-tw-text12{
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+#page-title-mainlang.pt-tw-text13{
+  font-size: 22px;
+  letter-spacing: 0px;
+  margin: 0 -5px;
+}
+
+#page-title-sublang.pt-en-text-sp2{
+  font-size:16px;
+  letter-spacing: 2px;
+}
+#page-title-sublang.pt-en-text-sp05{
+  font-size:15px;
+  letter-spacing: 0.5px;
+}
+#page-title-sublang.pt-en-text-sp-none{
+  font-size:15px;
+  letter-spacing: 0px;
+} */
+
+@media (max-width: 768px){
+  #ci-ae-logo-img{
+    margin: 0 -30px;
+  }
+  #page-title-mainlang.pt-tw-text04{
+    font-size: 32px;
+    letter-spacing: 28px;
+    margin-right: -28px;  
+  }
+  #page-title-mainlang.pt-tw-text05{
+    font-size: 32px;
+    letter-spacing: 20px;
+    margin-right: -20px;  
+  }
+  #page-title-mainlang.pt-tw-text06{
+    font-size: 30px;
+    letter-spacing: 15px;
+    margin-right: -15px;
+  }
+  #page-title-mainlang.pt-tw-text07{
+    font-size: 30px;
+    letter-spacing: 8px;
+    margin-right: -8px;
+  }
+  #page-title-mainlang.pt-tw-text08{
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+  #page-title-mainlang.pt-tw-text09{
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  #page-title-mainlang.pt-tw-text10{
+    /* font-size: 24px;
+    letter-spacing: 1px; */
+  }
+  #page-title-mainlang.pt-tw-text11{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  #page-title-mainlang.pt-tw-text12{
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  #page-title-mainlang.pt-tw-text13{
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+}
+/*------------------------------------------------------------------------*-
+    $main
+-*------------------------------------------------------------------------*/
+#block01{
+  width: 280px;
+  margin: 0 auto;		
+}
+#block01-head{
+  padding-top:2.5rem;
+}
+#block01-body{
+  position: relative;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+#block01-foot{
+}
+
+
+
+#login_area{
+	margin-bottom: 1.875rem;
+}
+
+/* .form-check{
+  position: relative;
+}
+.form-check > input[type=radio]{
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+.form-check > input[type=radio]:focus + label{
+    outline: 2px solid #d2e5f6;
+    outline-offset: 0;
+}
+.form-check > label{
+  position: relative;
+  padding-left: 22px;
+  padding-right: 20px;
+}
+.form-check > label:hover{
+  cursor:pointer;
+}
+.form-check > label:before{
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content:"";
+  width: 14px;
+  height: 14px;
+  border: 1px solid #3071b5;
+  border-radius: 50%;
+}
+.form-check > input[type=radio]:checked + label:after{
+  display: block;
+  position: absolute;
+  content:"";
+  top:  8px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background: #3071b5;
+  border-radius: 50%;
+} */
+
+
+
+
+#block02{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  font-size: 15px;
+}
+@media (max-width: 620px){
+  #block02{
+    width: 320px;
+    margin: 0 auto;  
+    padding: 20px 10px;
+  }
+}
+h2{
+  color:#4c4c4c;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+.btn-login-style001{
+	width: 100%;
+  height: 45px;
+}
+
+.pg-login-links{
+	font-size: 13px;
+	color:#4c4c4c;
+	text-decoration: none;
+	border-bottom: none;
+}
+.pg-login-links:hover{
+	color:#ff6600;
+	text-decoration: none;	
+	border-bottom: none;
+}
+#form-subcontrol{
+  font-size: 15px;
+}
+
+/*------------------------------------------------------------------------*-
+    $Other
+    $其他
+-*------------------------------------------------------------------------*/
+.bg-warning{
+  background-color: #fff799;
+}
+.w100{
+  width: 100px;
+}
+.btn-icon{
+  display: inline-block;
+  position: relative;
+  top:10px;
+  width:30px;
+  height: 30px;
+  background: transparent;
+  border:none;
+}
+.btn-reload{
+  background: center center url("../images-template/img-temp-login02-a08/btn-icon-reload.png");
+  background-size: 28px 28px;
+}
+
+
+
+.vdform-mustfill-normal{
+  padding-top: calc(0.375rem + 2px);
+  padding-bottom: calc(0.375rem + 1px);
+  color: #E1537D;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img / status / fix</title>
+    <defs>
+        <path d="M12.599552,82.0986283 L91.7122182,82.0986283" id="path-1"></path>
+        <filter x="-4.1%" y="-45.0%" width="108.2%" height="248.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.25" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0.560668026" y="0" width="103.190434" height="71.8362997" rx="10.3190434"></rect>
+        <filter x="-1.0%" y="-1.4%" width="103.9%" height="105.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M11.1176471,-5.1159077e-13 L44.3823529,-5.1159077e-13 C50.5224599,-5.19699677e-13 55.5,4.97754013 55.5,11.1176471 C55.5,17.307977 50.5746545,22.3746695 44.3868015,22.5497708 L42.5798871,22.6009021 L42.5798871,22.6009021 L36.40716,28.4888192 L36.3211936,22.4180981 L11.1175063,22.2912484 C4.96844678,22.2603002 2.72923716e-12,17.2667844 2.72848411e-12,11.1176471 C2.72773216e-12,4.97754013 4.97754013,-5.1046285e-13 11.1176471,-5.1159077e-13 Z" id="path-5"></path>
+        <filter x="-3.8%" y="-7.5%" width="107.7%" height="121.9%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1.125" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.125" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Component---images" transform="translate(-965.000000, -240.000000)">
+            <g id="img-/-status-/-fix" transform="translate(965.000000, 240.000000)">
+                <circle id="bg-cycle" fill="#D2E5F6" cx="90" cy="90" r="90"></circle>
+                <g id="main" transform="translate(37.500000, 19.275509)">
+                    <g id="main-pc" transform="translate(0.000000, 37.724491)">
+                        <g id="Line" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#23569D" stroke-width="4.5" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Rectangle-563">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <rect stroke="#23569D" stroke-width="4.5" stroke-linejoin="square" x="2.81066803" y="2.25" width="98.6904342" height="67.3362997" rx="10.3190434"></rect>
+                        </g>
+                        <line x1="101.25" y1="56.25" x2="2.25" y2="56.25" id="Path" stroke="#23569D" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <path d="M63.7247293,72.6300754 L63.7247293,82.8300754 L41.4469613,82.8300754 L41.4469613,72.6300754 L63.7247293,72.6300754 Z" id="Rectangle-565" stroke="#23569D" stroke-width="1.8"></path>
+                    </g>
+                    <g id="face" transform="translate(27.000000, 61.724491)">
+                        <ellipse id="Oval" fill="#23569D" cx="7.04347826" cy="7.04347826" rx="3.52173913" ry="5.86956522"></ellipse>
+                        <line x1="0" y1="4.69565217" x2="12.9130435" y2="-2.4893131e-14" id="Path-21" stroke="#23569D" stroke-width="2.34782609" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <ellipse id="Oval" fill="#23569D" transform="translate(43.108696, 7.043478) scale(-1, 1) translate(-43.108696, -7.043478) " cx="43.1086957" cy="7.04347826" rx="3.52173913" ry="5.86956522"></ellipse>
+                        <line x1="38.4130435" y1="4.69565217" x2="51.326087" y2="-2.4893131e-14" id="Path-21" stroke="#23569D" stroke-width="2.34782609" stroke-linecap="round" stroke-linejoin="round" transform="translate(44.869565, 2.347826) scale(-1, 1) translate(-44.869565, -2.347826) "></line>
+                        <polyline id="Path-23" stroke="#23569D" stroke-width="2.34782609" stroke-linecap="round" stroke-linejoin="round" points="18 19.6956522 25.5 15 33 19.6956522"></polyline>
+                    </g>
+                    <g id="sorry" transform="translate(82.267649, 18.028604) rotate(7.000000) translate(-82.267649, -18.028604) translate(54.267649, 3.528604)">
+                        <g id="Rectangle" stroke-linejoin="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use stroke="#23569D" stroke-width="2.25" xlink:href="#path-5"></use>
+                        </g>
+                        <text id="Sorry" font-family="SFProRounded-Regular, SF Pro Rounded" font-size="18" font-weight="normal" letter-spacing="0.300000004" fill="#23569D">
+                            <tspan x="7.69975672" y="17.567196">Sorry</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

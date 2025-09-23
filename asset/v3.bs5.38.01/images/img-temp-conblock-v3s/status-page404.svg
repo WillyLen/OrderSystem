@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img / status / page404</title>
+    <defs>
+        <filter x="-8.3%" y="-14.9%" width="116.7%" height="125.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M26.6326489,1.32647005 L35.1813252,24.8137338 C34.5050971,25.0019691 33.9466794,25.5386635 33.7647368,26.2683955 L33.7647368,26.2683955 L31.318,36.076 L13.7324035,42.4777205 C12.6865903,42.8583654 11.5302175,42.3191399 11.1495726,41.2733267 L0.122076246,10.9755294 C-0.258568634,9.92971618 0.280656841,8.77334342 1.32647005,8.39269854 L24.049818,0.122076246 C25.0956313,-0.258568634 26.252004,0.280656841 26.6326489,1.32647005 Z" id="path-2"></path>
+        <filter x="-7.1%" y="-5.9%" width="119.9%" height="116.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="28.2119622" height="36.2725228" rx="2.01514015"></rect>
+        <filter x="-8.9%" y="-6.9%" width="124.8%" height="119.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Component---images" transform="translate(-735.000000, -240.000000)">
+            <g id="img-/-status-/-page404" transform="translate(735.000000, 240.000000)">
+                <circle id="bg-cycle" fill="#D2E5F6" cx="90" cy="90" r="90"></circle>
+                <g id="main" transform="translate(23.966192, 20.562012)">
+                    <g id="UFO" transform="translate(85.375061, 36.984923) rotate(20.000000) translate(-85.375061, -36.984923) translate(43.375061, 13.484923)">
+                        <g id="main" filter="url(#filter-1)" transform="translate(-0.000000, -0.000000)" stroke="#23569D">
+                            <path d="M42,0 C52.7695526,0 61.5,7.38730163 61.5,16.5 C61.5,16.94222 61.4543072,17.3636339 61.3654553,17.7649376 C74.8152985,19.639954 84,23.4076732 84,27.75 C84,33.9632034 65.1959595,39 42,39 C18.8040405,39 1.36424205e-12,33.9632034 1.36424205e-12,27.75 C1.36424205e-12,23.4076732 9.18470154,19.639954 22.6342902,17.7646499 C22.5456928,17.3636339 22.5,16.94222 22.5,16.5 C22.5,7.38730163 31.2304474,0 42,0 Z" id="Combined-Shape" stroke-width="4.5"></path>
+                            <path d="M42,24.75 C52.7695526,24.75 61.5,22.6126984 61.5,16.5 C61.5,7.38730163 52.7695526,0 42,0 C31.2304474,0 22.5,7.38730163 22.5,16.5 C22.5,22.6126984 31.2304474,24.75 42,24.75 Z" id="Oval" stroke-width="4.5"></path>
+                            <line x1="42" y1="39.75" x2="42" y2="46.5" id="Path-19" stroke-width="3" stroke-linecap="round"></line>
+                            <line x1="65.1264857" y1="36.8650003" x2="66.8735143" y2="43.3849997" id="Path-19" stroke-width="3" stroke-linecap="round"></line>
+                            <line x1="17.1264857" y1="36.8650003" x2="18.8735143" y2="43.3849997" id="Path-19" stroke-width="3" stroke-linecap="round" transform="translate(18.000000, 40.125000) rotate(-150.000000) translate(-18.000000, -40.125000) "></line>
+                        </g>
+                        <g id="deco" transform="translate(16.500000, 26.250000)" fill="#23569D">
+                            <circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle>
+                            <circle id="Oval" cx="13.5" cy="4.5" r="1.5"></circle>
+                            <circle id="Oval" cx="25.5" cy="6" r="1.5"></circle>
+                            <circle id="Oval" cx="49.5" cy="1.5" r="1.5"></circle>
+                            <circle id="Oval" cx="37.5" cy="4.5" r="1.5"></circle>
+                        </g>
+                    </g>
+                    <g id="light" transform="translate(0.000000, 43.474636)" opacity="0.5" stroke="#23569D" stroke-dasharray="6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25">
+                        <line x1="41.3663999" y1="-2.13162821e-14" x2="3.83693077e-13" y2="34.7105309" id="Path-14"></line>
+                        <line x1="107.283808" y1="28.2133519" x2="107.283808" y2="82.2133519" id="Path-17"></line>
+                    </g>
+                    <g id="face" transform="translate(98.842901, 22.535772) rotate(-25.000000) translate(-98.842901, -22.535772) translate(93.342901, 17.035772)">
+                        <path d="M2.09426947,3.19444444 C1.70056671,3.19444444 1.36884066,3.05700369 1.09908136,2.78211806 C0.829322069,2.50723242 0.694444444,2.18171484 0.694444444,1.80555556 C0.694444444,1.42939627 0.829322069,1.10387869 1.09908136,0.828993056 C1.36884066,0.554107422 1.70056671,0.416666667 2.09426947,0.416666667 C2.47339064,0.416666667 2.79782601,0.554107422 3.0675853,0.828993056 C3.3373446,1.10387869 3.47222222,1.42939627 3.47222222,1.80555556 C3.47222222,2.18171484 3.3373446,2.50723242 3.0675853,2.78211806 C2.79782601,3.05700369 2.47339064,3.19444444 2.09426947,3.19444444 Z" id="Path" fill="#23569D"></path>
+                        <path d="M1.11111111,6.11111111 C1.11111111,7.91111111 3.10095667,10.6111111 5.55555556,10.6111111 C8.01015444,10.6111111 10,7.91111111 10,6.11111111 L1.11111111,6.11111111 Z" id="Path" stroke="#23569D" stroke-width="1.66666667" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <g id="doc" transform="translate(29.547453, 58.860622)" stroke-linejoin="round">
+                        <g id="Combined-Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use stroke="#23569D" stroke-width="3" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="-" transform="translate(19.104558, 20.601506) rotate(-20.000000) translate(-19.104558, -20.601506) translate(10.604558, 10.101506)" stroke="#23569D" stroke-linecap="round" stroke-width="2.01514015">
+                            <line x1="3.0010472e-15" y1="1.00757008" x2="16.1211212" y2="1.00757008" id="Path-18"></line>
+                            <line x1="3.0010472e-15" y1="7.05299054" x2="16.1211212" y2="7.05299054" id="Path-18"></line>
+                            <line x1="-1.36124101e-12" y1="13.098411" x2="16.1211212" y2="13.098411" id="Path-18"></line>
+                            <line x1="3.0010472e-15" y1="19.1438315" x2="16.1211212" y2="19.1438315" id="Path-18"></line>
+                        </g>
+                        <g transform="translate(43.539410, 47.145273) rotate(14.000000) translate(-43.539410, -47.145273) translate(29.039410, 28.645273)">
+                            <g id="Rectangle">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use stroke="#23569D" stroke-width="3" xlink:href="#path-4"></use>
+                            </g>
+                            <line x1="6.04542046" y1="8.06056062" x2="22.1665417" y2="8.06056062" id="Path-18" stroke="#23569D" stroke-width="2.01514015" stroke-linecap="round"></line>
+                            <line x1="6.04542046" y1="14.1059811" x2="22.1665417" y2="14.1059811" id="Path-18" stroke="#23569D" stroke-width="2.01514015" stroke-linecap="round"></line>
+                            <line x1="6.04542046" y1="20.1514015" x2="22.1665417" y2="20.1514015" id="Path-18" stroke="#23569D" stroke-width="2.01514015" stroke-linecap="round"></line>
+                            <line x1="6.04542046" y1="26.196822" x2="22.1665417" y2="26.196822" id="Path-18" stroke="#23569D" stroke-width="2.01514015" stroke-linecap="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

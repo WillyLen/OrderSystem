@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img / status / browser upgrade</title>
+    <defs>
+        <path d="M12.599552,82.0986283 L91.7122182,82.0986283" id="path-1"></path>
+        <filter x="-4.1%" y="-45.0%" width="108.2%" height="248.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.25" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0.560668026" y="0" width="103.190434" height="71.8362997" rx="10.3190434"></rect>
+        <filter x="-1.0%" y="-1.4%" width="103.9%" height="105.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M10.8797114,15.0425144 C10.8797114,12.4024907 13.0242797,10.2623285 15.6446995,10.2623285 L88.6670708,10.2623285 C91.298701,10.2623285 93.4320588,12.4072134 93.4320588,15.0425144 L93.4320588,49.952233 C93.4320588,52.5922567 91.2874906,54.7324189 88.6670708,54.7324189 L15.6446995,54.7324189 C13.0130692,54.7324189 10.8797114,52.587534 10.8797114,49.952233 L10.8797114,15.0425144 Z" id="path-5"></path>
+        <filter x="-2.3%" y="-4.3%" width="107.0%" height="113.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.9" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Component---images" transform="translate(-45.000000, -470.000000)">
+            <g id="browser-upgrade" transform="translate(45.000000, 470.000000)">
+                <circle id="bg-cycle" fill="#D2E5F6" cx="90" cy="90" r="90"></circle>
+                <g id="main-pc" transform="translate(39.000000, 48.000000)">
+                    <g id="Line" stroke-linecap="round" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#23569D" stroke-width="4.5" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Rectangle-563">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <rect stroke="#23569D" stroke-width="4.5" stroke-linejoin="square" x="2.81066803" y="2.25" width="98.6904342" height="67.3362997" rx="10.3190434"></rect>
+                    </g>
+                    <g id="Rectangle-564" stroke-linecap="round" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use stroke="#23569D" stroke-width="1.8" xlink:href="#path-5"></use>
+                    </g>
+                    <path d="M63.7247293,70.3118936 L63.7247293,82.8300754 L41.4469613,82.8300754 L41.4469613,70.3118936 L63.7247293,70.3118936 Z" id="Rectangle-565" stroke="#23569D" stroke-width="1.8"></path>
+                </g>
+                <g id="face" transform="translate(70.500000, 73.500000)">
+                    <path d="M3.86964128,6.76918978 C6.00678515,6.76918978 7.73928257,6.00440575 7.73928257,3.86810845 C7.73928257,1.73181114 6.00678515,0 3.86964128,0 C1.73249741,0 0,1.73181114 0,3.86810845 C0,6.00440575 1.73249741,6.76918978 3.86964128,6.76918978 Z" id="Oval" fill="#23569D"></path>
+                    <path d="M36.2024177,6.76918978 C38.3395616,6.76918978 40.072059,6.00440575 40.072059,3.86810845 C40.072059,1.73181114 38.3395616,6.21724894e-14 36.2024177,6.21724894e-14 C34.0652739,6.21724894e-14 32.3327765,1.73181114 32.3327765,3.86810845 C32.3327765,6.00440575 34.0652739,6.76918978 36.2024177,6.76918978 Z" id="Oval" fill="#23569D"></path>
+                    <path d="M8.89966588,11.3859968 C8.89966588,15.7791709 13.8855857,19.3405422 20.0360295,19.3405422 C26.1864733,19.3405422 31.1723931,15.7791709 31.1723931,11.3859968" id="Oval-2" stroke="#23569D" stroke-width="1.8" stroke-linecap="round"></path>
+                </g>
+                <g id="light-deco" transform="translate(16.500000, 58.500000)" opacity="0.5" stroke="#23569D" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <path d="M0,5.25 L10.5,5.25 M5.25,0 L5.25,10.5" id="Combined-Shape"></path>
+                    <path d="M136.5,48.75 L150,48.75 M143.25,42 L143.25,55.5" id="Combined-Shape"></path>
+                    <path d="M10.5,66.75 L18,66.75 M14.25,63 L14.25,70.5" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

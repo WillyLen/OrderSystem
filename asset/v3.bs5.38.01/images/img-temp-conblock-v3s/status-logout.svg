@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img / status / logout</title>
+    <defs>
+        <path d="M6,0 C16.7695526,0 25.5,8.73044738 25.5,19.5 C25.5,30.2695526 16.7695526,39 6,39 C3.90660008,39 1.89024591,38.6701279 8.22259111e-05,38.0595284 L8.22259111e-05,0.94047157 C1.89024591,0.329872096 3.90660008,0 6,0 Z" id="path-1"></path>
+        <filter x="-11.3%" y="-7.4%" width="130.4%" height="119.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1.875" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.875" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.623529412  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0,111.75 L27.75,111.75 M73.5,111.75 L112.5,111.75" id="path-3"></path>
+        <filter x="-1.7%" y="-76.7%" width="103.4%" height="386.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.9" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.623529412  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M2.18776327,12.8846916 L44.1877633,1.07219158 C45.7827356,0.623605621 47.4393669,1.55293537 47.8879528,3.14790767 C47.9622989,3.41224931 48,3.6855468 48,3.9601444 L48,124.543141 C48,126.199995 46.6568542,127.543141 45,127.543141 C44.6129158,127.543141 44.2294895,127.46823 43.8708689,127.32254 L1.87086886,110.26004 C0.739806735,109.800546 -6.76532554e-15,108.701475 0,107.480641 L0,15.7726444 C-1.05277563e-15,14.4286062 0.893923605,13.248584 2.18776327,12.8846916 Z" id="path-5"></path>
+        <filter x="-7.8%" y="-2.2%" width="121.9%" height="105.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="2.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="3" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.25" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="3" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-7" cx="36.75" cy="74.25" r="3.75"></circle>
+        <filter x="-25.3%" y="-25.3%" width="150.7%" height="177.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.9" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.556862745   0 0 0 0 0.654901961   0 0 0 0 0.796078431  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Component---images" transform="translate(-275.000000, -470.000000)">
+            <g id="Logout" transform="translate(275.000000, 470.000000)">
+                <circle id="bg-cycle" fill="#D2E5F6" cx="90" cy="90" r="90"></circle>
+                <ellipse id="shadow" fill="#BBCDDD" cx="125.85" cy="141.614172" rx="21.75" ry="3.6"></ellipse>
+                <g id="man" transform="translate(105.000000, 58.500000)">
+                    <g id="show-head">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#23569D" stroke-width="3.75" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="face" transform="translate(0.750000, 16.500000)">
+                        <circle fill="#23569D" cx="9" cy="2.25" r="2.25"></circle>
+                        <path d="M0,9.75 C3.5,13.25 6.75,12.75 9.75,8.25" id="Path-2" stroke="#23569D" stroke-width="1.8" stroke-linecap="round"></path>
+                    </g>
+                    <g id="body" transform="translate(2.250000, 39.000000)" stroke="#23569D">
+                        <path d="M6.75,0 C7.25,8.5 9.25,15.75 12.75,21.75" id="Path-6" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.14362961,4.48787695 C8.07318789,6.94068908 14.1228304,10.6496148 19.6453536,10.2941037 C25.1678768,9.93859268 29.4440081,7.97512537 30.6430202,5.99817386" id="Path" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.393020, 7.402884) scale(1, -1) rotate(-1.000000) translate(-19.393020, -7.402884) "></path>
+                        <circle id="Oval" stroke-width="1.8" transform="translate(32.247454, 13.122454) scale(1, -1) rotate(13.000000) translate(-32.247454, -13.122454) " cx="32.2474542" cy="13.1224542" r="3.75"></circle>
+                        <ellipse id="Oval" stroke-width="1.8" transform="translate(34.538445, 35.587427) scale(1, -1) rotate(13.000000) translate(-34.538445, -35.587427) " cx="34.5384449" cy="35.5874266" rx="2.25" ry="3.75"></ellipse>
+                        <line x1="12" y1="21.75" x2="0" y2="39.75" id="Path-7" stroke-width="2.25" stroke-linecap="round"></line>
+                        <path d="M12.75,21.75 C19.25,31.25 25.75,35 32.25,33" id="Path-8" stroke-width="2.25" stroke-linecap="round"></path>
+                        <path d="M8.25,9 C7.25,12 4.5,12.5 0,10.5" id="Path-9" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+                <g id="Door" transform="translate(33.750000, 25.500000)">
+                    <g id="ground-line" stroke-linecap="round" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use stroke="#23569D" stroke-width="1.8" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M89.25,67.8715918 L89.25,111 M71.25,13.5 L86.25,13.5 C87.9068542,13.5 89.25,14.8431458 89.25,16.5 L89.25,37.1284082" id="Shape" stroke="#23569D" stroke-width="4.5"></path>
+                    <g id="main-door" transform="translate(23.250000, 0.000000)">
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use stroke="#23569D" stroke-width="4.5" xlink:href="#path-5"></use>
+                        </g>
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use stroke="#23569D" stroke-width="1.8" xlink:href="#path-7"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

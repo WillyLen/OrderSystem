@@ -1,0 +1,64 @@
+.timeselector { 
+	width: 220px;
+	padding: 20px 30px; 
+	line-height: 100%; 
+	color: #333; 
+	border: solid 1px #fff; 
+	border-radius: 3px; 
+	background: #fff; 
+	position: absolute; 
+	overflow: hidden; 
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.timeselector-item,
+.timeselector-separator { 
+	float: left; 
+}
+.timeselector-value,
+.timeselector-button { 
+	display: inline-block;
+	width: 74px;
+	padding: 5px 10px; 
+	font-weight: 700; 
+	text-align: center; 
+	cursor: pointer; 
+}
+.timeselector-value { 
+	display: block; 
+	color: #333; 
+	font-weight: normal;
+	border: solid 1px #23569d; 
+	border: none;
+	background: #fff; 
+	padding:20px 10px;
+}
+.timeselector-separator { 
+	padding: 0 2px; 
+	margin-top: 30%;
+ }
+.timeselector-button { 
+	display: block; 
+	text-decoration: none; 
+	color: #fff; 
+	border: solid 1px #23569d; 
+	background: #23569d; 
+}
+.timeselector-button:hover { 
+	color: #fff; 
+	border-color: #1c457e; 
+	background: #1c457e; 
+	text-decoration: none;
+}
+.timeselector-up { 
+	border-width: 1px 1px 0; 
+	border-radius: 3px 3px 0 0; 
+	border-radius: 0; 
+}
+.timeselector-down { 
+	border-width: 0 1px 1px; 
+	border-radius: 0 0 3px 3px; 
+	border-radius: 0; 
+}

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6888E682-FF8B-40E0-A85D-CB7BA2162E94}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderSystem</RootNamespace>
+    <AssemblyName>OrderSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44337</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Otp.NET, Version=1.4.0.0, Culture=neutral, PublicKeyToken=38a48df817e173a6, processorArchitecture=MSIL">
+      <HintPath>packages\Otp.NET.1.4.0\lib\net461\Otp.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>packages\QRCoder.1.6.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginSession.cs" />
+    <Compile Include="Models\OtpEnrollment.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\SessionRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\OtpService.cs" />
+    <Compile Include="Services\QrService.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\OtpViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asset\cont-img\demo-qtitle%402x.png" />
+    <Content Include="asset\cont-img\demo-qtitle.png" />
+    <Content Include="asset\cont-img\family6-headerdesign2025.png" />
+    <Content Include="asset\cont-img\icon-arrow-right.svg" />
+    <Content Include="asset\cont-img\icon-check-white%402x.png" />
+    <Content Include="asset\cont-img\icon-check-white.svg" />
+    <Content Include="asset\cont-img\icon-state-cked.svg" />
+    <Content Include="asset\cont-img\icon-state-close.svg" />
+    <Content Include="asset\cont-img\img_flight_photo.png" />
+    <Content Include="asset\cont-img\img_flight_photo_747_400.png" />
+    <Content Include="asset\cont-img\img_flight_photo_777_300.png" />
+    <Content Include="asset\v3.bs5.38.01\%40corebs5ver20250903.txt" />
+    <Content Include="asset\v3.bs5.38.01\Copyright  China Airlines 中華航空版權所有.txt" />
+    <Content Include="asset\v3.bs5.38.01\css\civd-content-style-bs5.css" />
+    <Content Include="asset\v3.bs5.38.01\css\civd.timeselector.css" />
+    <Content Include="asset\v3.bs5.38.01\css\datatables.css" />
+    <Content Include="asset\v3.bs5.38.01\css\datatables.min.css" />
+    <Content Include="asset\v3.bs5.38.01\css\jquery-ui.min.css" />
+    <Content Include="asset\v3.bs5.38.01\css\jquery-ui.theme.ciweb.css" />
+    <Content Include="asset\v3.bs5.38.01\css\page-conblock-v3s-custom.css" />
+    <Content Include="asset\v3.bs5.38.01\css\page-login-v3s-custom.css" />
+    <Content Include="asset\v3.bs5.38.01\css\page-sandwich-custom.css" />
+    <Content Include="asset\v3.bs5.38.01\css\page-systemMain-custom.css" />
+    <Content Include="asset\v3.bs5.38.01\css\temp-login-v3s.css" />
+    <Content Include="asset\v3.bs5.38.01\css\temp-otherstate-v3s.css" />
+    <Content Include="asset\v3.bs5.38.01\css\temp-sandwich-v3s-v02.css" />
+    <Content Include="asset\v3.bs5.38.01\css\temp-sandwich-v3s.css" />
+    <Content Include="asset\v3.bs5.38.01\css\temp-systemMain-v3s-v02.css" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-arrow-round-simple-down-white-heavy.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-arrow-round-simple-left.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-arrow-round-simple-right.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-arrow-round-simple-up-white-heavy.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-arrow-round-simple-up.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-round-info-white-heavy.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-round-minus.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\icon-round-plus-full.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\img-status-empty.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\img-status-no-result.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\ui-icons_444444_256x240.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\ui-icons_555555_256x240.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\ui-icons_777620_256x240.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\ui-icons_777777_256x240.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\ui-icons_cc0000_256x240.png" />
+    <Content Include="asset\v3.bs5.38.01\images\icons\ui-icons_ffffff_256x240.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\icon-eyes-close%402x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\icon-eyes-close%403x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\icon-eyes-close.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\icon-eyes-open%402x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\icon-eyes-open%403x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\icon-eyes-open.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\img-ci-logo-en%402x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\img-ci-logo-en%403x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\img-ci-logo-en.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-browser-upgrade.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-fix.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-logout.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-maintaince.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-page404.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-permission.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-conblock-v3s\status-system-error.svg" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\btn-main-nav.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\btn-nav-settings.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\ci-logo-en%402x.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\icon-flowarrow.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\icon-goToTop.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\icon-triangle-red-down.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\icon-user-hdr.png" />
+    <Content Include="asset\v3.bs5.38.01\images\img-temp-systemMain-v3s\icon_header_home.png" />
+    <Content Include="asset\v3.bs5.38.01\images\loading\ci-plane-loading.gif" />
+    <Content Include="asset\v3.bs5.38.01\images\loading\ld01\ld_global_cities.png" />
+    <Content Include="asset\v3.bs5.38.01\images\loading\ld01\ld_global_plane.png" />
+    <Content Include="asset\v3.bs5.38.01\images\loading\ld02\ld_ci_plane.png" />
+    <Content Include="asset\v3.bs5.38.01\js\bootstrap.bundle.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\alert.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\base-component.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\button.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\carousel.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\collapse.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\data.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\event-handler.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\manipulator.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\selector-engine.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dropdown.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\modal.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\offcanvas.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\popover.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\scrollspy.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\tab.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\toast.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\tooltip.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\backdrop.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\component-functions.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\config.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\focustrap.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\index.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\sanitizer.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\scrollbar.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\swipe.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\template-factory.js" />
+    <Content Include="asset\v3.bs5.38.01\js\civd-sandwich-v3s.js" />
+    <Content Include="asset\v3.bs5.38.01\js\civd-systemMain-noleftmenu-v3s.js" />
+    <Content Include="asset\v3.bs5.38.01\js\civd-systemMain-v3s.js" />
+    <Content Include="asset\v3.bs5.38.01\js\datatables.js" />
+    <Content Include="asset\v3.bs5.38.01\js\datatables.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\jquery-3.5.1.js" />
+    <Content Include="asset\v3.bs5.38.01\js\jquery-ui.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\jquery.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\jquery.slimscroll.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\jquery.timeselector.js" />
+    <Content Include="asset\v3.bs5.38.01\js\metisMenu.js" />
+    <Content Include="asset\v3.bs5.38.01\js\metisMenu.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\page-login.js" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\alert.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\base-component.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\button.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\carousel.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\collapse.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\data.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\event-handler.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\manipulator.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dom\selector-engine.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\dropdown.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\modal.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\offcanvas.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\popover.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\scrollspy.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\tab.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\toast.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\tooltip.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\backdrop.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\component-functions.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\config.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\focustrap.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\index.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\sanitizer.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\scrollbar.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\swipe.js.map" />
+    <Content Include="asset\v3.bs5.38.01\js\bs5dist\util\template-factory.js.map" />
+    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Auth\Index.cshtml" />
+    <Content Include="Views\Auth\QrCodePartial.cshtml" />
+    <Content Include="Views\Auth\LoginAndRegister.cshtml" />
+    <Content Include="Views\Auth\ShowOtp.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50669</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44337/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

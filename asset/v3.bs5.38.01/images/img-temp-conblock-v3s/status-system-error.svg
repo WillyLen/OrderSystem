@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img / status / system_error</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="102" height="75" rx="3"></rect>
+        <filter x="-3.7%" y="-5.0%" width="110.3%" height="114.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="3" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.25" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="3" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.337254902   0 0 0 0 0.615686275  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Component---images" transform="translate(-505.000000, -240.000000)">
+            <g id="main" transform="translate(505.000000, 240.000000)">
+                <circle id="bg-cycle" fill="#D2E5F6" cx="90" cy="90" r="90"></circle>
+                <ellipse id="shadow" fill="#BBCDDD" cx="97.35" cy="140.85" rx="56.25" ry="3.6"></ellipse>
+                <g id="browser" transform="translate(90.000000, 91.500000) rotate(-10.000000) translate(-90.000000, -91.500000) translate(39.000000, 54.000000)" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#23569D" stroke-width="4.5" xlink:href="#path-1"></use>
+                    </g>
+                    <line x1="0" y1="18" x2="102" y2="18" id="Path-15" stroke="#23569D" stroke-width="4.5"></line>
+                </g>
+                <g id="face" transform="translate(72.000000, 85.000000)">
+                    <path d="M5.65452756,10.625 C4.59153012,10.625 3.69586978,10.25391 2.96751969,9.51171875 C2.23916959,8.76952754 1.875,7.89063008 1.875,6.875 C1.875,5.85936992 2.23916959,4.98047246 2.96751969,4.23828125 C3.69586978,3.49609004 4.59153012,3.125 5.65452756,3.125 C6.67815472,3.125 7.55413022,3.49609004 8.28248031,4.23828125 C9.01083041,4.98047246 9.375,5.85936992 9.375,6.875 C9.375,7.89063008 9.01083041,8.76952754 8.28248031,9.51171875 C7.55413022,10.25391 6.67815472,10.625 5.65452756,10.625 Z" id="Path" fill="#23569D"></path>
+                    <path d="M30.4045276,7.625 C29.3415301,7.625 28.4458698,7.25390996 27.7175197,6.51171875 C26.9891696,5.76952754 26.625,4.89063008 26.625,3.875 C26.625,2.85936992 26.9891696,1.98047246 27.7175197,1.23828125 C28.4458698,0.496090039 29.3415301,0.125 30.4045276,0.125 C31.4281547,0.125 32.3041302,0.496090039 33.0324803,1.23828125 C33.7608304,1.98047246 34.125,2.85936992 34.125,3.875 C34.125,4.89063008 33.7608304,5.76952754 33.0324803,6.51171875 C32.3041302,7.25390996 31.4281547,7.625 30.4045276,7.625 Z" id="Path" fill="#23569D"></path>
+                    <path d="M1.5,18.5 C1.5,21.5 6.872583,26 13.5,26 C20.127417,26 25.5,21.5 25.5,18.5 L1.5,18.5 Z" id="Path" stroke="#23569D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.500000, 22.250000) scale(1, -1) rotate(-12.000000) translate(-13.500000, -22.250000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

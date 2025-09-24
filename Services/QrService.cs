@@ -18,7 +18,7 @@ namespace OrderSystem.Services
                 expiry = DateTime.Now.AddMinutes(1),
                 isUsed = false
             };
-            string qrText = $"https://localhost:44337/Auth/LoginAndRegister?sessionId={loginSession.sessionId}";
+            string qrText = $"https://localhost:44337/Auth/Login?sessionId={loginSession.sessionId}";
             byte[] qrCodeImage;
             using (QRCodeGenerator qrGenerator = new QRCodeGenerator())
             using (QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q))

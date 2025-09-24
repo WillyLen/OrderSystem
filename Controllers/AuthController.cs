@@ -35,17 +35,20 @@ namespace OrderSystem.Controllers
 
             return PartialView("QrCodePartial");
         }
-        public ActionResult LoginAndRegister(string sessionId)
+        public ActionResult Login(string sessionId)
         {
             var loginSession = Session["loginSession"] as Models.LoginSession;
-            if(loginSession.sessionId != sessionId)
+            if (loginSession.sessionId != sessionId)
             {
                 return RedirectToAction("index", "Auth");
             }
 
             if (loginSession == null || loginSession.isUsed || DateTime.Now > loginSession.expiry)
             {
-                return Content("QRCode 已過期或無效");
+
+                string script = "<script>alert('QRCode 已過期或無效'); window.location.href = '/Auth/index';</script>";
+                return Content(script, "text/html");
+
             }
 
             ViewBag.sessionId = loginSession.sessionId;
@@ -53,7 +56,7 @@ namespace OrderSystem.Controllers
         }
 
         [HttpPost]
-        public ActionResult LoginAndRegister(string account, string password,  string sessionId)
+        public ActionResult Login(string account, string password,  string sessionId)
         {
             var loginSession = Session["loginSession"] as Models.LoginSession;
             if (loginSession.sessionId != sessionId)
@@ -61,13 +64,6 @@ namespace OrderSystem.Controllers
                 return RedirectToAction("index", "Auth");
             }
             loginSession.account = account;
-
-            User user = new User
-            {
-                account = account,
-                password = password
-            };
-            Session["user"] = user;
 
             var authService = new OrderSystem.Services.AuthService();
             bool isValid = authService.LoginAuthCheck(account, password);
@@ -85,6 +81,35 @@ namespace OrderSystem.Controllers
                 return View();
             }
         }
+        public ActionResult Register(string sessionId)
+        {
+            var loginSession = Session["loginSession"] as Models.LoginSession;
+            if (loginSession.sessionId != sessionId)
+            {
+                return RedirectToAction("index", "Auth");
+            }
+            ViewBag.SessionId = sessionId;
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(string email, string account, string password, string sessionId)
+        {
+            ViewBag.SessionId = sessionId;
+            var authService = new OrderSystem.Services.AuthService();
+            bool isValid = authService.RegisterCheck(email, account, password);
+            if (isValid)
+            {
+                string script = $"<script>alert('{account}，註冊成功！'); window.location.href = '/Auth/Login?sessionId={sessionId}';</script>";
+                return Content(script, "text/html");
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Invalid email or account or password.";
+                return View();
+            }
+            
+        }
         public ActionResult ShowOtp(string sessionId)
         {
             var loginSession = Session["loginSession"] as Models.LoginSession;
@@ -101,7 +126,7 @@ namespace OrderSystem.Controllers
                 ViewBag.ErrorMessage = TempData["ErrorMessage"];
             }
 
-            return View(otpModel); // 傳給 View 顯示
+            return View(otpModel);
         }
 
         [HttpPost]
@@ -116,7 +141,7 @@ namespace OrderSystem.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "驗證失敗，已重新產生新的 OTP。";
+                TempData["ErrorMessage"] = "驗證失敗，已產生新的 OTP。";
                 return RedirectToAction("ShowOtp", new { sessionId = sessionId });
             }
         }

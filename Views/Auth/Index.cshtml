@@ -1,117 +1,49 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "QR Code Login";
+    Layout = "~/Views/Shared/_Auth.cshtml";
 }
 
-<!DOCTYPE html>
-<html class="" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="網頁關鍵字">
-    <meta name="description" content="這裡是登入用的網頁QRCode">
-    <meta name="copyright" content="QRCode">
-    <title>Login-QRCode</title>
-
-    <!--css-->
-    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/civd-content-style-bs5.css" />
-    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/temp-login-v3s.css" />
-    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/page-login-v3s-custom.css" />
-
-
-    <script src="/asset/v3.bs5.38.01/js/jquery.min.js"></script>
-    <script src="/asset/v3.bs5.38.01/js/bootstrap.bundle.min.js"></script>
-    <script src="/asset/v3.bs5.38.01/js/page-login.js"></script>
+@section scripts {
     <script>
-        $(function () {
-            $("#btn-reset").click(function () {
-                $.ajax({
-                    url: "/Auth/GetNewQrCode",
-                    type: "GET",
-                    success: function (result) {
-                        $("#qrcode-container").html(result); // 更新 QRCode 區塊
-                    },
-                    error: function () {
-                        alert("QRCode 更新失敗！");
-                    }
+            $(function () {
+                $("#btn-reset").click(function () {
+                    $.ajax({
+                        url: "/Auth/GetNewQrCode",
+                        type: "GET",
+                        success: function (result) {
+                            $("#qrcode-container").html(result); // 更新 QRCode 區塊
+                        },
+                        error: function () {
+                            alert("QRCode 更新失敗！");
+                        }
+                    });
                 });
             });
-        });
 
-        var seconds = 60;
-        var timer = setInterval(function () {
-            seconds--;
-            if (seconds <= 0) {
-                clearInterval(timer);
-                alert("QrCode 已過期，請重新取得QrCode！");
-                location.href = '@Url.Action("index", "Auth")';
-            }
-        }, 1000);
+            var seconds = 60;
+            var timer = setInterval(function () {
+                seconds--;
+                if (seconds <= 0) {
+                    clearInterval(timer);
+                    alert("QrCode 已過期，請重新取得QrCode！");
+                    location.href = '@Url.Action("index", "Auth")';
+                }
+            }, 1000);
     </script>
-</head>
+}
 
-<body>
-    <div id="wrapper">
+@section Title {
+    <h1 id="page-title-mainlang" class="pt-tw-text10">QRCode登入</h1>
+    <p id="page-title-sublang" class="">QRCode Login</p>
+}
 
-        <div class="containerblock">
-            <div id="block01">
-                <header id="block01-head">
-                    <div id="ci-logo">
-                        <img src="asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en.png"
-                             srcset="/asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en.png 1x,
-                                /asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en@2x.png 2x,
-                                /asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en@3x.png 3x"
-                             id="ci-logo-img" alt="China Airlines Logo" />
-                    </div>
-
-                    <div id="page-title">
-                        <h1 id="page-title-mainlang" class="pt-tw-text10">QRCode登入系統</h1>
-                        <p id="page-title-sublang" class="">QRCode Login System</p>
-                    </div>
-
-                    <div class="intro">
-                    </div>
-                </header>
-
-
-
-
-                <div id="block01-body">
-                    <div id="qrcode-container" class="align-content-center">
-                        <img src="@ViewBag.QrImage" />
-                        <p>QRCode 對應網址：<a href="@ViewBag.QrText">QRCode連結</a></p>
-                    </div>
-                    <!--錯誤訊息 Start   如果要出現則將class d-none拿掉-->
-                    <div class="alert alert-danger  mb-2  d-none" role="alert">
-                        錯誤訊息錯誤訊息錯誤訊息錯誤訊息
-                    </div>
-                    <!--錯誤訊息 End -->
-
-
-                    <p class="text-center">
-                        <input id="btn-reset" type="button" class="btn btn-primary-sp btn-login-style001" value="重新整理 / Reset" />
-                    </p>
-
-
-                </div><!--block-body End-->
-
-                <div id="block01-foot">
-                    <!--補充的內容可寫在這裡 -->
-                </div><!--block-body End-->
-
-
-            </div><!-- block01 End -->
-
-            <div id="block02" class="d-none">
-                <h4 class="mt-0">注意事項</h4>
-                <p class="">系統會追蹤使用者的使用情況，如發現有盜用他人密碼或竊取資料的行為，將從重嚴厲處分。(這是舉例的文字)</p>
-            </div>
-        </div><!--containerblock End -->
-
-    </div><!--Wrapper End -->
-
-    <div id="htmlversion">CITemplateV3-login</div>
-    <!--htmlversion: for Reference, Dont Delete this 檢查HTML版本註記用, 不會出現，不要把我刪掉-->
-
-</body>
-</html>
+@section Main {
+    <div id="qrcode-container" class="align-content-center">
+        <img src="@ViewBag.QrImage" />
+        <p>QRCode 對應網址：<a href="@ViewBag.QrText">QRCode連結</a></p>
+    </div>
+    <p class="text-center">
+        <input id="btn-reset" type="button" class="btn btn-primary-sp btn-login-style001" value="重新整理 / Reset" />
+    </p>
+}

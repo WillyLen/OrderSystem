@@ -7,5 +7,8 @@ namespace OrderSystem.ViewModels
 {
     public class LoginViewModel
     {
+        public string account { get; set; }
+        public string role { get; set; }
+        public string sessionId { get; set; }
     }
 }

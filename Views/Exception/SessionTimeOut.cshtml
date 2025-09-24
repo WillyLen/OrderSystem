@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "SessionTimeOut";
+    Layout = "~/Views/Shared/_Exception.cshtml";
+}
+
+@section Title {
+    <h1 id="page-title-mainlang" class="pt-tw-text10">逾時登出</h1>
+    <p id="page-title-sublang" class="">Session Time Out</p>
+}
+
+@section Main {
+    <p class="text-center">
+        <img src="/asset/v3.bs5.38.01/images/img-temp-conblock-v3s/status-logout.svg" alt="">
+    </p>
+}
+
+@section Sub {
+    <h2 class="mt-0  text-center">使用逾時，您已登出此系統</h2>
+    <p class="text-center">您已逾時過久未操作，系統已將您自動登出，請重新登入。</p>
+    <p class="text-center  mt-4  mb-5">
+        <input id="" type="button" class="btn btn-primary-sp" value="重新登入" />
+    </p>
+}
+

@@ -9,14 +9,11 @@ namespace OrderSystem.Services
     {
         public bool LoginAuthCheck(string account, string password)
         {
-            if (string.IsNullOrEmpty(account) && string.IsNullOrEmpty(password))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return true;
+        }
+        public bool RegisterCheck(string email, string account, string password)
+        {
+            return true;
         }
     }
 }

@@ -1,46 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Training-Project\\OrderSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\649797\\Desktop\\OrderSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\models\\otpenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\otpenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\controllers\\exceptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\exceptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\services\\qrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\qrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\exception\\sessiontimeout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\exception\\sessiontimeout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\models\\loginsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\loginsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\exception\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\exception\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\shared\\_auth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\shared\\_auth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\shared\\_exception.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\shared\\_exception.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\views\\auth\\showotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\showotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\views\\auth\\loginandregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\loginandregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|d:\\training-project\\ordersystem\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\auth\\showotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\showotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\desktop\\ordersystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,133 +73,163 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QrService.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Services\\QrService.cs",
-              "RelativeDocumentMoniker": "Services\\QrService.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Services\\QrService.cs",
-              "RelativeToolTip": "Services\\QrService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvxEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T08:34:19.617Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwC0AAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T00:09:02.962Z",
+              "DocumentIndex": 4,
+              "Title": "_Exception.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Shared\\_Exception.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Exception.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Shared\\_Exception.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Exception.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T08:10:09.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T07:42:20.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T07:30:33.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginSession.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Models\\LoginSession.cs",
-              "RelativeDocumentMoniker": "Models\\LoginSession.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Models\\LoginSession.cs",
-              "RelativeToolTip": "Models\\LoginSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T07:20:39.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OtpEnrollment.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Models\\OtpEnrollment.cs",
-              "RelativeDocumentMoniker": "Models\\OtpEnrollment.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Models\\OtpEnrollment.cs",
-              "RelativeToolTip": "Models\\OtpEnrollment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T07:32:41.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ShowOtp.cshtml",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\ShowOtp.cshtml",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
-              "RelativeToolTip": "Views\\Auth\\ShowOtp.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T06:47:16.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Views\\Auth\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Index.cshtml",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Views\\Auth\\Index.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\Index.cshtml",
               "RelativeToolTip": "Views\\Auth\\Index.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwCkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T07:36:10.162Z",
+              "WhenOpened": "2025-09-24T08:07:08.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LoginAndRegister.cshtml",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Views\\Auth\\LoginAndRegister.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\LoginAndRegister.cshtml",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Views\\Auth\\LoginAndRegister.cshtml",
-              "RelativeToolTip": "Views\\Auth\\LoginAndRegister.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "Title": "_Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Shared\\_Menu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Menu.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Shared\\_Menu.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Menu.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAASwBEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T07:46:05.848Z",
+              "WhenOpened": "2025-09-24T07:49:31.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Auth.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Shared\\_Auth.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Auth.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Shared\\_Auth.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Auth.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T07:30:46.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SessionTimeOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Exception\\SessionTimeOut.cshtml",
+              "RelativeDocumentMoniker": "Views\\Exception\\SessionTimeOut.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Exception\\SessionTimeOut.cshtml",
+              "RelativeToolTip": "Views\\Exception\\SessionTimeOut.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T07:43:37.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Exception\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Exception\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Exception\\Logout.cshtml",
+              "RelativeToolTip": "Views\\Exception\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T07:27:16.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T07:40:56.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T07:30:02.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExceptionController.cs",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Controllers\\ExceptionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExceptionController.cs",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Controllers\\ExceptionController.cs",
+              "RelativeToolTip": "Controllers\\ExceptionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T07:23:54.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "OtpService.cs",
-              "DocumentMoniker": "D:\\Training-Project\\OrderSystem\\Services\\OtpService.cs",
-              "RelativeDocumentMoniker": "Services\\OtpService.cs",
-              "ToolTip": "D:\\Training-Project\\OrderSystem\\Services\\OtpService.cs",
-              "RelativeToolTip": "Services\\OtpService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwvxEAAAAyAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwDUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T02:43:57.72Z",
+              "WhenOpened": "2025-09-24T06:13:32.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShowOtp.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\ShowOtp.cshtml",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
+              "RelativeToolTip": "Views\\Auth\\ShowOtp.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T06:08:44.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\649797\\Desktop\\OrderSystem\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\649797\\Desktop\\OrderSystem\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T06:07:19.566Z",
               "EditorCaption": ""
             }
           ]

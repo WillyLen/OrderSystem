@@ -1,0 +1,453 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/civd-content-style-bs5.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/temp-systemMain-v3s-v02.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/page-systemMain-custom.css?vd20250901" />
+    <!--javascript-->
+    <script src="/asset/v3.bs5.38.01/js/jquery.min.js?vd2025901"></script>
+    <script src="/asset/v3.bs5.38.01/js/bootstrap.bundle.min.js"></script>
+    <script src="/asset/v3.bs5.38.01/js/metisMenu.min.js"></script>
+    <script src="/asset/v3.bs5.38.01/js/jquery.slimscroll.min.js"></script>
+    <script src="/asset/v3.bs5.38.01/js/civd-systemMain-v3s.js?vd20250901"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @RenderSection("Body", required: false)
+    <!-- wrapper class 請填寫六大家族class名稱 -->
+    <div id="wrapper" class="">
+        <div id="page-container">
+            <a id="anchor-pagetop" name="anchor-pagetop">錨點/anchor</a><!--錨點-頁首anchor -->
+            <header id="header">
+                <button id="btn-main-nav" data-toggle="offcanvas" type="button"></button>
+
+                <div id="header-title">
+                    <div class="logo-ci">
+                        <a href="#">
+                            <img src="/asset/v3.bs5.38.01/images/img-temp-systemMain-v3s/ci-logo-en%402x.png" width="192" height="40" alt="中華航空 China Airlines" />
+                        </a>
+                    </div>
+                    <div class="website-title  website-title-pc">電腦版顯示系統名稱</div>
+                    <div class="website-title  website-title-mobile">行動版簡易名稱</div>
+                </div><!-- header-title End-->
+
+                <button id="btn-header-subarea" type="button"></button>
+                <div id="header-subarea">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#" class="  hdsub-userinfo" data-bs-toggle="modal" data-bs-target="#modal-userinfo">
+                                <span class="hdsub-user-empId">CI31245</span>
+                                <span class="hdsub-user-empName">李大仁</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">English</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">操作手冊</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">模擬連結</a>
+                        </li>
+                        <li>
+                            <a href="#" class="  hdsub-log-out">登出</a>
+                        </li>
+                    </ul>
+                </div><!--header-subarea End-->
+            </header>
+
+            <div id="main" class="container-fluid">
+                <!-- InstanceBeginEditable name="EditRegion-Main" -->
+                <!--asp.net contentplaceholder start-->
+                <div class="row">
+                    <div id="" class="col-xl-12">
+                        <header id="content-header">
+                            <div class="row">
+                                <h1 class="col-md-6">Page Title</h1>
+                                <nav aria-label="breadcrumb" class="col-md-6">
+                                    <ol class="breadcrumb   justify-content-end">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Page Title</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </header><!-- content-header end-->
+
+
+
+                        <div id="content-body">
+
+
+
+
+                        </div><!-- content-body -->
+                    </div>
+                </div>
+                <!--asp.net contentplaceholder end-->
+                <!-- InstanceEndEditable -->
+            </div><!-- main -->
+
+
+
+            <footer id="footer">
+                <p class="footer-sysinfo">
+                    <span class="sysinfo-copyright">Copyright © China Airlines</span>
+                    <span class="sysinfo-sys">version: 1.0</span>
+                </p>
+            </footer>
+        </div><!-- page-container End-->
+
+
+        <nav id="main-nav">
+            <ul id="main-nav-menu" class="metismenu">
+                <li>
+                    <a class="" href="mainpage-systemmain.html">
+                        <span class="mn-item">前言<span class="badge bg-primary-sp ms-2 position-relative" style="top:-2px;">Update</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">空白頁 for MasterPage</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="" href="版型_系統主頁含左側主選單_空白頁forMasterPage.html" target="_blank">
+                                <span class="mn-item">左側主選單空白頁 for MasterPage</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="版型_系統主頁_沒有左側主選單版_空白頁forMasterPage.html" target="_blank">
+                                <span class="mn-item">沒有左側主選單空白頁 for MasterPage</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="版型_系統主頁_三明治版_空白頁forMasterPage.html" target="_blank">
+                                <span class="mn-item">三明治版空白頁 for MasterPage</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">UI Component<span class="badge bg-primary-sp ms-2 position-relative" style="top:-2px;">Update</span></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="bootstrapdoc建議優先閱讀.html">bootstrap doc建議優先閱讀項目<span class="badge bg-primary-sp ms-2 position-relative" style="top:-2px;">Update</span></a>
+                        </li>
+                        <li>
+                            <a href="UIComponent_文字.html">文字</a>
+                        </li>
+                        <li>
+                            <a href="UIComponent_按鈕.html">按鈕</a>
+                        </li>
+                        <li>
+                            <a href="UIComponent_頁籤.html">頁籤</a>
+                        </li>
+                        <li>
+                            <a href="UIComponent_dotNet元件.html">Dot Net元件</a>
+                        </li>
+                        <li>
+                            <a href="UIComponent_UIUX小組自製.html">UIComponent_UIUX小組自製</a>
+                        </li>
+                        <li>
+                            <a href="UIComponent_Loading.html">Loading</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">登入</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="01.01-登入頁-身份-很多種.html" target="_blank">登入頁-身份-很多種</a>
+                        </li>
+                        <li>
+                            <a href="01.01-登入頁-身份-很多種_en.html" target="_blank">登入頁-身份-很多種(EN)</a>
+                        </li>
+                        <li>
+                            <a href="01.11.01-登入頁-首頁多個進入點.html" target="_blank">首頁多個進入點</a>
+                        </li>
+                        <li>
+                            <a href="01.11.02-登入頁-首頁多個進入點含標題.html" target="_blank">首頁多個進入點含標題</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">進入系統前條款說明</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="02.01-條款說明同意頁.html" target="_blank">條款說明同意頁</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">系統首頁<span class="badge bg-primary-sp ms-2 position-relative" style="top:-2px;">Update</span></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="03.01-系統首頁-重要資訊匯集.html">系統首頁-重要資訊匯集</a>
+                        </li>
+                        <li>
+                            <a href="03.02-系統首頁-最新消息與注意事項.html">系統首頁-最新消息與注意事項</a>
+                        </li>
+                        <li>
+                            <a href="03.03-系統首頁-最新消息與注意事項_alert.html">系統首頁-最新消息與注意事項_alert</a>
+                        </li>
+                        <li>
+                            <a href="03.04-系統首頁-簡易介紹與近期表單進度.html">系統首頁-簡易介紹與近期表單進度</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">六大家族顏色<span class="badge bg-primary-sp ms-2 position-relative" style="top:-2px;">重要</span></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="03.11.01-系統首頁6大家族-說明.html">六大家族顏色設定說明</a>
+                        </li>
+                        <li>
+                            <a href="03.11.02-系統首頁6大家族-策略.html">策略家族</a>
+                        </li>
+                        <li>
+                            <a href="03.11.03-系統首頁6大家族-服務.html">服務家族</a>
+                        </li>
+                        <li>
+                            <a href="03.11.04-系統首頁6大家族-行政.html">行政家族</a>
+                        </li>
+                        <li>
+                            <a href="03.11.05-系統首頁6大家族-營業.html">營業家族</a>
+                        </li>
+                        <li>
+                            <a href="03.11.06-系統首頁6大家族-航務.html">航務家族</a>
+                        </li>
+                        <li>
+                            <a href="03.11.07-系統首頁6大家族-修護.html">修護家族</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">新增表單</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="04.00-表單排版基礎介紹.html">表單排版基礎介紹</a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">表單排版參考</a>
+                            <ul>
+                                <li>
+                                    <a href="04.01.01-新增表單_1欄.html">新增表單_1欄</a>
+                                </li>
+                                <li>
+                                    <a href="04.01.01-01-新增表單_1欄_加必填.html">新增表單_1欄_加必填</a>
+                                </li>
+                                <li>
+                                    <a href="04.01.02-新增表單_2欄.html">新增表單_2欄</a>
+                                </li>
+                                <li>
+                                    <a href="04.01.02-01-新增表單_2欄_錯誤狀態.html">新增表單_2欄_錯誤狀態</a>
+                                </li>
+                                <li>
+                                    <a href="04.01.03-新增表單_3欄.html">新增表單_3欄</a>
+                                </li>
+                                <li>
+                                    <a href="04.01.04-新增表單_4欄.html">新增表單_4欄</a>
+                                </li>
+                                <li>
+                                    <a href="04.01.11-表單欄位範例.html">表單欄位範例</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">表單含步驟狀態</a>
+                            <ul>
+                                <li>
+                                    <a href="04.02.01-新增表單_步驟01.html">新增表單_步驟01</a>
+                                </li>
+                                <li>
+                                    <a href="04.02.02-新增表單_步驟02.html">新增表單_步驟02</a>
+                                </li>
+                                <li>
+                                    <a href="04.02.03-新增表單_步驟03.html">新增表單_步驟03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">表單含小節與簽核流程</a>
+                            <ul>
+                                <li>
+                                    <a href="04.03.01-新增表單_含小節與簽核流程.html">新增表單_含小節與簽核流程</a>
+                                </li>
+                                <li>
+                                    <a href="04.03.03-新增表單_含小節與簽核流程_簡化呈核對象.html">新增表單_含小節與簽核流程_簡化呈核對象</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="04.04.01-日期與時間.html">日期與時間<span class="badge bg-primary-sp">NEW</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">閱讀表單</span>
+                        <span class="badge badge-warning">Update</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="05.01.01-表單細節-閱讀模式.html">表單細節-閱讀模式</a>
+                        </li>
+                        <li>
+                            <a href="05.01.02-表單細節-閱讀模式.html">表單細節-閱讀模式</a>
+                        </li>
+                        <li>
+                            <a href="05.02.01-表單細節-審核模式.html">表單細節-審核模式</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">資料清單</span>
+                        <span class="badge badge-danger">NEW</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="06.01.03-資料清單-清單形式_無資料.html">資料清單-清單形式_無資料</a>
+                        </li>
+                        <li>
+                            <a href="06.02.03-資料清單-表格形式-按鈕.html">資料清單-表格形式-按鈕</a>
+                        </li>
+                        <li>
+                            <a href="06.03.01-資料清單-表格-固定表頭.html">資料清單-表格-固定表頭<span class="badge bg-primary-sp">NEW</span></a>
+                        </li>
+                        <li>
+                            <a href="06.03.02-資料清單-表格-固定表頭與輔助資訊.html">資料清單-表格-固定表頭與輔助資訊<span class="badge bg-primary-sp">NEW</span></a>
+                        </li>
+                        <li>
+                            <a href="06.04.01-資料清單-表格-階層式表格.html">階層式表格<span class="badge bg-primary-sp">NEW</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">查詢</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="07.02.01-查詢條件與結果表格.html">查詢條件與結果表格</a>
+                        </li>
+                        <li>
+                            <a href="07.02.01-查詢條件與結果表格_無結果.html">查詢條件與結果表格_無結果</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="" href="08.01-卡片式UI.html">
+                        <span class="mn-item">卡片式UI</span>
+                        <span class="badge badge-danger">NEW</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="09.01-挑選常用功能.html">
+                        <span class="mn-item">挑選常用功能</span>
+                        <span class="badge badge-danger">NEW</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="98.01-填寫問卷.html" target="_blank">
+                        <span class="mn-item">填寫問卷</span>
+                        <span class="badge badge-danger">NEW</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="mn-item">其他-特殊狀態</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="99.01系統維護作業中.html" target="_blank">系統維護作業中</a>
+                        </li>
+                        <li>
+                            <a href="99.02您沒有權限.html" target="_blank">您沒有權限</a>
+                        </li>
+                        <li>
+                            <a href="99.03系統異常.html" target="_blank">系統異常</a>
+                        </li>
+                        <li>
+                            <a href="99.04連結失效.html" target="_blank">連結失效</a>
+                        </li>
+                        <li>
+                            <a href="99.05系統維修中.html" target="_blank">系統維修中</a>
+                        </li>
+                        <li>
+                            <a href="99.06舊版瀏覽器.html" target="_blank">舊版瀏覽器</a>
+                        </li>
+                        <li>
+                            <a href="99.07您已登出系統.html" target="_blank">您已登出系統</a>
+                        </li>
+                        <li>
+                            <a href="99.08逾時登出.html" target="_blank">逾時登出</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div id="screencover-dark"></div>
+    </div><!-- wrapper End -->
+    <div id="back-to-top">
+        <a href="#anchor-pagetop">Back to Top</a>
+    </div><!--back to top End -->
+    <!-- Modal - Userinfo -->
+    <div class="modal fade" id="modal-userinfo" tabindex="-1" aria-labelledby="modal-userinfo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">使用者資訊</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table  table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>姓名</td>
+                                <td>李大仁</td>
+                            </tr>
+                            <tr>
+                                <td>員工號</td>
+                                <td>CI31245</td>
+                            </tr>
+                            <tr>
+                                <td>所屬單位</td>
+                                <td>資訊管理處/品質管理部</td>
+                            </tr>
+                            <tr>
+                                <td>使用身份</td>
+                                <td>一般使用者</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Userinfo End-->
+    <!-- InstanceBeginEditable name="EditRegion_Others" -->
+    <!--EditRegion-Others 這個樣版以外的其他元件寫在這裡，例如:內容用的彈跳視窗(Bootstrap:Modal)...等-->
+    <!-- InstanceEndEditable -->
+</body>
+</html>
+@RenderSection("scripts", required: false)

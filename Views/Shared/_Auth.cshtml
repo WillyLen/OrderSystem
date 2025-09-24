@@ -1,0 +1,57 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/civd-content-style-bs5.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/temp-login-v3s.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/v3.bs5.38.01/css/page-login-v3s-custom.css" />
+    <script src="/asset/v3.bs5.38.01/js/jquery.min.js"></script>
+    <script src="/asset/v3.bs5.38.01/js/bootstrap.bundle.min.js"></script>
+    <script src="/asset/v3.bs5.38.01/js/page-login.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="containerblock">
+            <div id="block01">
+                <header id="block01-head">
+                    <div id="ci-logo">
+                        <img src="/asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en.png"
+                             srcset="/asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en.png 1x,
+                                /asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en@2x.png 2x,
+                                /asset/v3.bs5.38.01/images/img-temp-conblock-v3s/img-ci-logo-en@3x.png 3x"
+                             id="ci-logo-img" alt="China Airlines Logo" />
+                    </div>
+
+                    <div id="page-title">
+                        @RenderSection("Title", required: true)
+                    </div>
+
+                    <div class="intro">
+                    </div>
+                </header>
+
+
+
+
+                <div id="block01-body">
+                    @RenderSection("Main", required: true)
+                </div><!--block-body End-->
+
+                <div id="block01-foot">
+
+                </div><!--block-body End-->
+
+
+            </div><!-- block01 End -->
+
+        </div><!--containerblock End -->
+
+    </div><!--Wrapper End -->
+</body>
+</html>
+@RenderSection("scripts", required: false)

@@ -130,7 +130,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AuthController.cs" />
-    <Compile Include="Controllers\ExceptionController.cs" />
+    <Compile Include="Controllers\LogoutController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -140,6 +140,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\Logout.cs" />
     <Compile Include="Services\OtpService.cs" />
     <Compile Include="Services\QrService.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -333,13 +334,13 @@
     <Content Include="Views\Auth\QrCodePartial.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Auth\ShowOtp.cshtml" />
-    <Content Include="Views\Menu\Index.cshtml" />
     <Content Include="Views\Auth\Register.cshtml" />
     <Content Include="Views\Shared\_Auth.cshtml" />
-    <Content Include="Views\Exception\Logout.cshtml" />
-    <Content Include="Views\Exception\SessionTimeOut.cshtml" />
+    <Content Include="Views\Logout\Logout.cshtml" />
+    <Content Include="Views\Logout\SessionTimeOut.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
-    <Content Include="Views\Shared\_Exception.cshtml" />
+    <Content Include="Views\Shared\_Logout.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

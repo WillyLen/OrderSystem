@@ -19,6 +19,23 @@
 </head>
 <body>
     @RenderSection("Body", required: false)
+    <!-- Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">登出帳號</h5>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    確認要登出帳號?
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" onclick="Logout()">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- wrapper class 請填寫六大家族class名稱 -->
     <div id="wrapper" class="">
         <div id="page-container">
@@ -55,7 +72,7 @@
                             <a href="#" class="">模擬連結</a>
                         </li>
                         <li>
-                            <a href="#" class="  hdsub-log-out">登出</a>
+                            <a href="#" class="  hdsub-log-out" data-bs-toggle="modal" data-bs-target="#logoutModal">登出</a>
                         </li>
                     </ul>
                 </div><!--header-subarea End-->
@@ -448,6 +465,11 @@
     <!-- InstanceBeginEditable name="EditRegion_Others" -->
     <!--EditRegion-Others 這個樣版以外的其他元件寫在這裡，例如:內容用的彈跳視窗(Bootstrap:Modal)...等-->
     <!-- InstanceEndEditable -->
+    <script>
+        function Logout() {
+            location.href = '@Url.Action("Logout", "Logout")';
+        }
+    </script>
 </body>
 </html>
 @RenderSection("scripts", required: false)

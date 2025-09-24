@@ -6,10 +6,12 @@ using System.Web.Mvc;
 
 namespace OrderSystem.Controllers
 {
-    public class ExceptionController : Controller
+    public class LogoutController : Controller
     {
         public ActionResult Logout()
         {
+            Session.Clear();
+            Session.Abandon();
             return View();
         }
         public ActionResult SessionTimeOut()

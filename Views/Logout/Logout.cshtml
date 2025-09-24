@@ -1,7 +1,15 @@
 ﻿
 @{
     ViewBag.Title = "Logout";
-    Layout = "~/Views/Shared/_Exception.cshtml";
+    Layout = "~/Views/Shared/_Logout.cshtml";
+}
+
+@section scripts {
+    <script>
+        function Logout() {
+            location.href = '@Url.Action("index", "Auth")';
+        }
+    </script>
 }
 
 @section Title {
@@ -19,7 +27,7 @@
     <h2 class="mt-0  text-center">您已登出此系統</h2>
     <p class="text-center">您成功登出系統，如需使用請重新登入。</p>
     <p class="text-center  mt-4  mb-5">
-        <input id="" type="button" class="btn btn-primary-sp" value="重新登入" />
+        <input id="" type="button" class="btn btn-primary-sp" value="重新登入" onclick="Logout()" />
     </p>
 }
 

@@ -12,6 +12,8 @@ namespace OrderSystem.Models
         public string email { get; set; }
         public string role { get; set; } // Admin / User
         public DateTime createdAt { get; set; }
+        public string TotpSecret { get; set; }   // Base32
+        public bool TwoFactorEnabled { get; set; }
 
     }
 }

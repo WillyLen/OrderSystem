@@ -205,6 +205,7 @@
     <Compile Include="Services\Logout.cs" />
     <Compile Include="Repositories\OtpDao.cs" />
     <Compile Include="Services\OtpService.cs" />
+    <Compile Include="Services\OtpTotpService.cs" />
     <Compile Include="Services\PasswordHasher.cs" />
     <Compile Include="Services\QrService.cs" />
     <Compile Include="Repositories\UserDao.cs" />
@@ -413,6 +414,7 @@
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Shared\_Logout.cshtml" />
     <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\Auth\ChooseMfa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

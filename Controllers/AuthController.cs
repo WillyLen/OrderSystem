@@ -13,7 +13,7 @@ namespace OrderSystem.Controllers
     public class AuthController : Controller
     {
         private bool IsSessionValid(LoginSession session, string sessionId)
-        {
+            {
             return session != null &&
                    !session.isUsed &&
                    DateTime.Now <= session.expiry &&
@@ -64,6 +64,7 @@ namespace OrderSystem.Controllers
         }
 
 
+        // [POST] /Auth/Login
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
@@ -71,39 +72,119 @@ namespace OrderSystem.Controllers
             var session = dao.GetBySessionId(model.SessionId);
 
             if (!IsSessionValid(session, model.SessionId))
-            {
                 return RedirectToAction("Index", "Auth");
-            }
 
             var authService = new OrderSystem.Services.AuthService();
-            bool isValid = authService.LoginAuthCheck(model.Account, model.Password);
+            bool isValid = authService.LoginAuthCheck(model.Account, model.Password); // :contentReference[oaicite:10]{index=10}
 
-            if (isValid)
-            {
-                dao.MarkAsUsedBySessionId(session.sessionId);
-                dao.MarkAccount(session.sessionId, model.Account);
-                return RedirectToAction("ShowOtp", new { sessionId = model.SessionId });
-            }
-            else
+            if (!isValid)
             {
                 model.ErrorMessage = "帳號或密碼錯誤!";
                 return View(model);
             }
+
+            // 標記 session 已綁帳號
+            dao.MarkAsUsedBySessionId(session.sessionId);      // :contentReference[oaicite:11]{index=11}
+            dao.MarkAccount(session.sessionId, model.Account); // :contentReference[oaicite:12]{index=12}
+
+            // NEW: 改導向到「選擇第二因子」頁
+            return RedirectToAction("ChooseMfa", new { sessionId = model.SessionId });
+        }
+        // [GET] /Auth/ChooseMfa?sessionId=...
+        public ActionResult ChooseMfa(string sessionId)
+        {
+            var sessDao = new LoginSessionDao();
+            var sess = sessDao.GetBySessionId(sessionId);
+            //if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
+
+            var userDao = new UserDao();
+            var user = userDao.GetUserByAccount(sess.account); // 讀使用者:contentReference[oaicite:1]{index=1}
+
+            ViewBag.SessionId = sessionId;
+            ViewBag.TotpEnabled = user?.TwoFactorEnabled == true;
+
+            if (user != null && !user.TwoFactorEnabled)
+            {
+                var totpSvc = new OtpTotpService();
+                var base32 = totpSvc.GenerateSecretBase32();
+                var uri = totpSvc.BuildOtpAuthUri("OrderSystem", user.account, base32);
+                TempData["__EnrollSecret"] = base32;
+                ViewBag.ManualKey = base32;
+
+                // 🔽 這段就是把 URI 轉成 QR 圖（參考你在 QrService 的寫法:contentReference[oaicite:2]{index=2}）
+                using (var qrGen = new QRCodeGenerator())
+                using (var qrData = qrGen.CreateQrCode(uri, QRCodeGenerator.ECCLevel.Q))
+                using (var pngQr = new PngByteQRCode(qrData))
+                {
+                    byte[] pngBytes = pngQr.GetGraphic(5);
+                    string b64 = Convert.ToBase64String(pngBytes);
+                    ViewBag.QrDataUrl = "data:image/png;base64," + b64;
+                }
+            }
+            return View();
         }
 
-        //public ActionResult Register(string sessionId)
-        //{
-        //    var dao = new LoginSessionDao();
-        //    var session = dao.GetBySessionId(sessionId);
+        // [POST] /Auth/EnableTotp  （用於首次掃描後輸入一組 6 碼確認開通）
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EnableTotp(string sessionId, string code)
+        {
+            var sessDao = new LoginSessionDao();
+            var sess = sessDao.GetBySessionId(sessionId);
+            //if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
 
-        //    if (!IsSessionValid(session, sessionId))
-        //    {
-        //        return RedirectToAction("Index", "Auth");
-        //    }
+            var userDao = new UserDao();
+            var user = userDao.GetUserByAccount(sess.account);
 
-        //    ViewBag.SessionId = sessionId;
-        //    return View();
-        //}
+            var base32 = TempData["__EnrollSecret"] as string;
+            if (string.IsNullOrEmpty(base32))
+            {
+                TempData["MfaError"] = "啟用流程已逾時，請重新產生 QR。";
+                return RedirectToAction("ChooseMfa", new { sessionId });
+            }
+
+            var totpSvc = new OtpTotpService();
+            if (!totpSvc.Verify(base32, code))
+            {
+                TempData["MfaError"] = "驗證碼錯誤，請再試一次。";
+                return RedirectToAction("ChooseMfa", new { sessionId });
+            }
+
+            // 開通信號：把 secret 寫進使用者，TwoFactorEnabled = 1
+            userDao.UpdateTotp(user.account, base32, true);
+            TempData["MfaInfo"] = "已成功啟用 Authenticator。";
+            return RedirectToAction("ChooseMfa", new { sessionId });
+        }
+
+        // [POST] /Auth/VerifyTotp  （已啟用者每次登入時輸入 6 碼）
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult VerifyTotp(string sessionId, string code)
+        {
+            var sessDao = new LoginSessionDao();
+            var sess = sessDao.GetBySessionId(sessionId);
+            //if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
+
+            var userDao = new UserDao();
+            var user = userDao.GetUserByAccount(sess.account);
+
+            if (!(user?.TwoFactorEnabled ?? false) || string.IsNullOrEmpty(user.TotpSecret))
+            {
+                TempData["MfaError"] = "尚未啟用 Authenticator。";
+                return RedirectToAction("ChooseMfa", new { sessionId });
+            }
+
+            var totpSvc = new OtpTotpService();
+            if (!totpSvc.Verify(user.TotpSecret, code))
+            {
+                TempData["MfaError"] = "TOTP 驗證失敗。";
+                return RedirectToAction("ChooseMfa", new { sessionId });
+            }
+
+            // 通過：登入完成
+            return RedirectToAction("Index", "Menu");
+        }
+
         public ActionResult Register(string sessionId)
         {
             var dao = new LoginSessionDao();

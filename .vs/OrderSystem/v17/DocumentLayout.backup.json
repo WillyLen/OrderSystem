@@ -1,38 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\649797\\source\\repos\\OrderSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|C:\\Users\\649797\\source\\repos\\OrderSystem\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\auth\\choosemfa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\choosemfa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\services\\otptotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\otptotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\auth\\showotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\showotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\repositories\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:repositories\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\models\\otpenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\otpenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\services\\qrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\qrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,8 +46,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDao.cs",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Repositories\\UserDao.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserDao.cs",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Repositories\\UserDao.cs",
+              "RelativeToolTip": "Repositories\\UserDao.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAswEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:15:44.452Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -57,107 +75,111 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T08:21:56.308Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Title": "OtpTotpService.cs",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\OtpTotpService.cs",
+              "RelativeDocumentMoniker": "Services\\OtpTotpService.cs",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\OtpTotpService.cs",
+              "RelativeToolTip": "Services\\OtpTotpService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T08:19:20.933Z",
+              "WhenOpened": "2025-09-25T15:16:47.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T08:16:13.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T08:15:37.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OtpService.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\OtpService.cs",
-              "RelativeDocumentMoniker": "Services\\OtpService.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\OtpService.cs",
-              "RelativeToolTip": "Services\\OtpService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T08:06:47.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QrService.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\QrService.cs",
-              "RelativeDocumentMoniker": "Services\\QrService.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\QrService.cs",
-              "RelativeToolTip": "Services\\QrService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAiwDwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T08:06:41.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T07:05:11.781Z",
+              "WhenOpened": "2025-09-25T15:14:10.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAowJEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAArwGkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T06:31:50.962Z",
+              "WhenOpened": "2025-09-25T14:57:11.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChooseMfa.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\ChooseMfa.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\ChooseMfa.cshtml",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\ChooseMfa.cshtml",
+              "RelativeToolTip": "Views\\Auth\\ChooseMfa.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T15:20:13.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OtpEnrollment.cs",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Models\\OtpEnrollment.cs",
+              "RelativeDocumentMoniker": "Models\\OtpEnrollment.cs",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Models\\OtpEnrollment.cs",
+              "RelativeToolTip": "Models\\OtpEnrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:14.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowOtp.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\ShowOtp.cshtml",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
+              "RelativeToolTip": "Views\\Auth\\ShowOtp.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T14:58:15.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OtpService.cs",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\OtpService.cs",
+              "RelativeDocumentMoniker": "Services\\OtpService.cs",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\OtpService.cs",
+              "RelativeToolTip": "Services\\OtpService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:57:47.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T13:22:18.325Z",
               "EditorCaption": ""
             }
           ]

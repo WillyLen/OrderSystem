@@ -18,9 +18,9 @@ namespace OrderSystem.Services
         {
             using (IDbConnection db = new OracleConnection(connectionString))
             {
-                string sql = @"SELECT account, password, email, role, createdAt 
-                       FROM TR04.Users 
-                       WHERE account = :account";
+                string sql = @"SELECT account, password, email, role, createdAt, TotpSecret, TwoFactorEnabled
+                               FROM TR04.Users 
+                               WHERE account = :account";
                 var user = db.Query<User>(sql, new { account = account }).FirstOrDefault();
                 return user;
             }
@@ -63,6 +63,17 @@ namespace OrderSystem.Services
                        WHERE email = :email";
                 int count = db.ExecuteScalar<int>(sql, new { email = email });
                 return count > 0; // 如果 count 大於 0，表示 Email 已存在
+            }
+        }
+
+        public void UpdateTotp(string account, string base32Secret, bool enabled)
+        {
+            using (IDbConnection db = new OracleConnection(connectionString))
+            {
+                string sql = @"UPDATE TR04.Users 
+                       SET TotpSecret = :secret, TwoFactorEnabled = :enabled
+                       WHERE account = :account";
+                db.Execute(sql, new { secret = base32Secret, enabled = enabled ? 1 : 0, account });
             }
         }
     }

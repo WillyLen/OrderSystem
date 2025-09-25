@@ -1,50 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\649797\\source\\repos\\OrderSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\logout\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\logout\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\shared\\_logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\shared\\_logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\controllers\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\services\\logout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\logout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\views\\logout\\sessiontimeout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\logout\\sessiontimeout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\lien\\source\\repos\\ordersystem\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,150 +37,42 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Shared\\_Logout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Logout.cshtml",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Shared\\_Logout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Logout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:31:19.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Menu\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Menu\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Menu\\Index.cshtml",
-              "RelativeToolTip": "Views\\Menu\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:31:07.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SessionTimeOut.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Logout\\SessionTimeOut.cshtml",
-              "RelativeDocumentMoniker": "Views\\Logout\\SessionTimeOut.cshtml",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Logout\\SessionTimeOut.cshtml",
-              "RelativeToolTip": "Views\\Logout\\SessionTimeOut.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:25:49.175Z",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAMwGAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T00:43:45.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Logout\\Logout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Logout\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Logout\\Logout.cshtml",
-              "RelativeToolTip": "Views\\Logout\\Logout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:25:04.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Logout.cs",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\Logout.cs",
-              "RelativeDocumentMoniker": "Services\\Logout.cs",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\Logout.cs",
-              "RelativeToolTip": "Services\\Logout.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:24:08.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LogoutController.cs",
-              "DocumentMoniker": "C:\\Users\\Lien\\Source\\Repos\\OrderSystem\\Controllers\\LogoutController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LogoutController.cs",
-              "ToolTip": "C:\\Users\\Lien\\Source\\Repos\\OrderSystem\\Controllers\\LogoutController.cs",
-              "RelativeToolTip": "Controllers\\LogoutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:22:34.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:21:57.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Menu.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Shared\\_Menu.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Menu.cshtml",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Shared\\_Menu.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Menu.cshtml",
-              "ViewState": "AgIAAM8BAAAAAAAAAAAAANUBAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:14:40.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwCYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T13:36:18.482Z",
+              "WhenOpened": "2025-09-25T00:41:11.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
+              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
               "RelativeToolTip": "Views\\Auth\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:14:58.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Lien\\source\\repos\\OrderSystem\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:13:39.46Z",
+              "WhenOpened": "2025-09-25T00:37:05.06Z",
               "EditorCaption": ""
             }
           ]

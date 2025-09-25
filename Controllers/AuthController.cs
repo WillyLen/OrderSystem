@@ -100,8 +100,11 @@ namespace OrderSystem.Controllers
             bool isValid = authService.RegisterCheck(email, account, password);
             if (isValid)
             {
-                string script = $"<script>alert('{account}，註冊成功！'); window.location.href = '/Auth/Login?sessionId={sessionId}';</script>";
-                return Content(script, "text/html");
+                //string script = $"<script>alert('{account}，註冊成功！'); window.location.href = '/Auth/Login?sessionId={sessionId}';</script>";
+                //return Content(script, "text/html");
+                ViewBag.account = account;
+                ViewBag.RegisterSuccess = true;
+                return View();
             }
             else
             {

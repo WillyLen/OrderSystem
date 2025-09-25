@@ -124,30 +124,28 @@ namespace OrderSystem.Controllers
 
 
         [HttpPost]
-        public ActionResult Register(string email, string account, string password, string sessionId)
+        public ActionResult Register(RegisterViewModel model)
         {
             var dao = new UserDao();
             var authService = new OrderSystem.Services.AuthService();
-            string result = authService.RegisterCheck(email, account, password);
+            string result = authService.RegisterCheck(model.Email, model.Account, model.Password);
 
             if (result == "Success")
             {
-                string hashedPassword = PasswordHasher.HashPassword(password);
+                string hashedPassword = PasswordHasher.HashPassword(model.Password);
 
                 User user = new User
                 {
-                    email = email,
-                    account = account,
+                    email = model.Email,
+                    account = model.Account,
                     password = hashedPassword,
                     role = "User",
                     createdAt = DateTime.Now
                 };
 
                 dao.AddUser(user);
-                ViewBag.account = account;
-                ViewBag.RegisterSuccess = true;
-                ViewBag.SessionId = sessionId;
-                return View();
+                model.RegisterSuccess = true;
+                return View(model);
             }
             else if (result == "EmailAlreadyExists")
             {
@@ -157,7 +155,7 @@ namespace OrderSystem.Controllers
             {
                 ViewBag.ErrorMessage = "Account already exists.";
             }
-            return View();
+            return View(model);
         }
 
         public ActionResult ShowOtp(string sessionId)

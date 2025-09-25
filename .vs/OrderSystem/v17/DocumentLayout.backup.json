@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\649797\\source\\repos\\OrderSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAMwGAAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T00:43:45.259Z",
+              "WhenOpened": "2025-09-25T07:25:53.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
               "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Register.cshtml",
               "RelativeToolTip": "Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T00:41:11.657Z",
+              "WhenOpened": "2025-09-25T07:05:11.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Index.cshtml",
-              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\Index.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T00:37:05.06Z",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAqwJ8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T06:31:50.962Z",
               "EditorCaption": ""
             }
           ]

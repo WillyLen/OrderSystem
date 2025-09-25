@@ -1,4 +1,5 @@
 ﻿using OrderSystem.Models;
+using OrderSystem.Models.ViewModels;
 using OrderSystem.Services;
 using QRCoder;
 using System;
@@ -11,6 +12,14 @@ namespace OrderSystem.Controllers
 {
     public class AuthController : Controller
     {
+        private bool IsSessionValid(LoginSession session, string sessionId)
+        {
+            return session != null &&
+                   !session.isUsed &&
+                   DateTime.Now <= session.expiry &&
+                   session.sessionId == sessionId;
+        }
+
         // GET: Auth
         public ActionResult Index()
         {
@@ -37,92 +46,132 @@ namespace OrderSystem.Controllers
         }
         public ActionResult Login(string sessionId)
         {
-            var loginSession = Session["loginSession"] as Models.LoginSession;
-            if (loginSession.sessionId != sessionId)
-            {
-                return RedirectToAction("index", "Auth");
-            }
+            var dao = new LoginSessionDao();
+            var session = dao.GetBySessionId(sessionId);
 
-            if (loginSession == null || loginSession.isUsed || DateTime.Now > loginSession.expiry)
+            if (!IsSessionValid(session, sessionId))
             {
-
                 string script = "<script>alert('QRCode 已過期或無效'); window.location.href = '/Auth/index';</script>";
                 return Content(script, "text/html");
-
             }
 
-            ViewBag.sessionId = loginSession.sessionId;
-            return View();
+            var model = new LoginViewModel
+            {
+                SessionId = session.sessionId
+            };
+
+            return View(model);
         }
 
+
         [HttpPost]
-        public ActionResult Login(string account, string password,  string sessionId)
+        public ActionResult Login(LoginViewModel model)
         {
-            var loginSession = Session["loginSession"] as Models.LoginSession;
-            if (loginSession.sessionId != sessionId)
+            var dao = new LoginSessionDao();
+            var session = dao.GetBySessionId(model.SessionId);
+
+            if (!IsSessionValid(session, model.SessionId))
             {
-                return RedirectToAction("index", "Auth");
+                return RedirectToAction("Index", "Auth");
             }
-            loginSession.account = account;
 
             var authService = new OrderSystem.Services.AuthService();
-            bool isValid = authService.LoginAuthCheck(account, password);
+            bool isValid = authService.LoginAuthCheck(model.Account, model.Password);
+
             if (isValid)
             {
-                loginSession.isUsed = true;
-                Session["loginSession"] = loginSession;
-                return RedirectToAction("ShowOtp", new { sessionId = sessionId });
+                dao.MarkAsUsedBySessionId(session.sessionId);
+                dao.MarkAccount(session.sessionId, model.Account);
+                return RedirectToAction("ShowOtp", new { sessionId = model.SessionId });
             }
             else
             {
-                ViewBag.ErrorMessage = "Invalid account or password.";
-                ViewBag.SessionId = sessionId;
-                Session["loginSession"] = loginSession;
-                return View();
+                model.ErrorMessage = "帳號或密碼錯誤!";
+                return View(model);
             }
         }
+
+        //public ActionResult Register(string sessionId)
+        //{
+        //    var dao = new LoginSessionDao();
+        //    var session = dao.GetBySessionId(sessionId);
+
+        //    if (!IsSessionValid(session, sessionId))
+        //    {
+        //        return RedirectToAction("Index", "Auth");
+        //    }
+
+        //    ViewBag.SessionId = sessionId;
+        //    return View();
+        //}
         public ActionResult Register(string sessionId)
         {
-            var loginSession = Session["loginSession"] as Models.LoginSession;
-            if (loginSession.sessionId != sessionId)
+            var dao = new LoginSessionDao();
+            var session = dao.GetBySessionId(sessionId);
+
+            if (!IsSessionValid(session, sessionId))
             {
-                return RedirectToAction("index", "Auth");
+                return RedirectToAction("Index", "Auth");
             }
-            ViewBag.SessionId = sessionId;
-            return View();
+
+            var model = new RegisterViewModel
+            {
+                SessionId = sessionId
+            };
+
+            return View(model);
         }
+
 
         [HttpPost]
         public ActionResult Register(string email, string account, string password, string sessionId)
         {
-            ViewBag.SessionId = sessionId;
+            var dao = new UserDao();
             var authService = new OrderSystem.Services.AuthService();
-            bool isValid = authService.RegisterCheck(email, account, password);
-            if (isValid)
+            string result = authService.RegisterCheck(email, account, password);
+
+            if (result == "Success")
             {
-                //string script = $"<script>alert('{account}，註冊成功！'); window.location.href = '/Auth/Login?sessionId={sessionId}';</script>";
-                //return Content(script, "text/html");
+                string hashedPassword = PasswordHasher.HashPassword(password);
+
+                User user = new User
+                {
+                    email = email,
+                    account = account,
+                    password = hashedPassword,
+                    role = "User",
+                    createdAt = DateTime.Now
+                };
+
+                dao.AddUser(user);
                 ViewBag.account = account;
                 ViewBag.RegisterSuccess = true;
+                ViewBag.SessionId = sessionId;
                 return View();
+            }
+            else if (result == "EmailAlreadyExists")
+            {
+                ViewBag.ErrorMessage = "Email already exists.";
             }
             else
             {
-                ViewBag.ErrorMessage = "Invalid email or account or password.";
-                return View();
+                ViewBag.ErrorMessage = "Account already exists.";
             }
-            
+            return View();
         }
+
         public ActionResult ShowOtp(string sessionId)
         {
-            var loginSession = Session["loginSession"] as Models.LoginSession;
-            if (loginSession.sessionId != sessionId)
+            var dao = new LoginSessionDao();
+            var session = dao.GetBySessionId(sessionId);
+
+            if (session.sessionId != sessionId)
             {
                 return RedirectToAction("index", "Auth");
             }
 
             var otpService = new OtpService();
-            var otpModel = otpService.GenerateOtp(sessionId); // 產生 OTP
+            var otpModel = otpService.GenerateOtp(sessionId); // 產生並儲存 OTP 到 DB
 
             if (TempData["ErrorMessage"] != null)
             {
@@ -140,7 +189,8 @@ namespace OrderSystem.Controllers
 
             if (isValid)
             {
-                return RedirectToAction("index", "Menu");
+                otpService.DeleteOtp(sessionId); // 驗證成功後刪除 OTP
+                return RedirectToAction("Index", "Menu");
             }
             else
             {

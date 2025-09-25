@@ -11,5 +11,6 @@ namespace OrderSystem.Models
         public string account { get; set; }
         public DateTime expiry { get; set; }
         public bool isUsed { get; set; }
+        public DateTime createdAt { get; set; }
     }
 }

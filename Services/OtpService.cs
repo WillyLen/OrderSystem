@@ -1,23 +1,32 @@
-﻿using OrderSystem.Models;
+﻿using Dapper;
+using Oracle.ManagedDataAccess.Client;
+using OrderSystem.Models;
 using OtpNet;
 using System;
 using System.Collections.Concurrent;
+using System.Configuration;
+using System.Data;
+using System.Linq;
 using System.Text;
 
 namespace OrderSystem.Services
 {
     public class OtpService
     {
-        // 模擬儲存 OTP 的記憶體資料庫（可改用 Redis 或 DB）
-        private static ConcurrentDictionary<string, byte[]> otpSecrets = new ConcurrentDictionary<string, byte[]>();
+
+        private readonly OtpDao otpDao = new OtpDao();
+
         public OtpEnrollment GenerateOtp(string sessionId)
         {
+            // 產生 OTP Secret
             var secret = KeyGeneration.GenerateRandomKey(20);
-            otpSecrets[sessionId] = secret;
-
             var totp = new Totp(secret, step: 60);
             var otpCode = totp.ComputeTotp();
 
+            // 儲存到資料庫
+            otpDao.InsertOtp(sessionId, secret, 60);
+
+            // 回傳 OTP 模型給前端
             return new OtpEnrollment
             {
                 sessionId = sessionId,
@@ -28,11 +37,18 @@ namespace OrderSystem.Services
 
         public bool ValidateOtp(string sessionId, string inputOtp)
         {
-            if (!otpSecrets.TryGetValue(sessionId, out var secret))
+            // 從資料庫取得 Secret
+            var secret = otpDao.GetSecretBySessionId(sessionId);
+            if (secret == null)
                 return false;
 
             var totp = new Totp(secret, step: 60);
             return totp.VerifyTotp(inputOtp, out long timeStepMatched, VerificationWindow.RfcSpecifiedNetworkDelay);
         }
+        public void DeleteOtp(string sessionId)
+        {
+            otpDao.DeleteOtp(sessionId);
+        }
+
     }
 }

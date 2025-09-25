@@ -1,4 +1,5 @@
-﻿@{
+﻿@model OrderSystem.Models.ViewModels.LoginViewModel
+@{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_Auth.cshtml";
 }
@@ -6,7 +7,7 @@
 @section scripts {
     <script>
     function Register() {
-        window.location.href = '/Auth/Register?sessionId=@ViewBag.sessionId';
+        window.location.href = '/Auth/Register?sessionId=@Model.SessionId';
     }
     </script>
 }
@@ -17,19 +18,23 @@
 }
 
 @section Main {
-    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage as string))
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
     {
         <div class="alert alert-danger mb-2 d-flex justify-content-center align-items-center" role="alert">
-            @ViewBag.ErrorMessage
+            @Model.ErrorMessage
         </div>
     }
+
     <div class="d-flex justify-content-center align-items-center">
         <form action="" method="post">
-            <label class="mb-5" for="account">帳號 : </label>
-            <input id="account" type="text" name="account" required/>
-            <label class="mb-5" for="password">密碼 : </label>
-            <input id="password" type="password" name="password" required/>
-            <input type="hidden" name="sessionId" value="@ViewBag.sessionId" />
+            <label class="mb-5" for="account">帳號 :</label>
+            <input id="account" type="text" name="account" value="@Model.Account" required />
+
+            <label class="mb-5" for="password">密碼 :</label>
+            <input id="password" type="password" name="password" required />
+
+            <input type="hidden" name="sessionId" value="@Model.SessionId" />
+
             <div class="d-flex justify-content-between align-items-center">
                 <button type="button" class="btn btn-primary" onclick="Register()">註冊</button>
                 <button type="submit" class="btn btn-primary">登入</button>

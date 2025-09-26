@@ -8,6 +8,9 @@ namespace OrderSystem.Services
 {
     public class PasswordHasher
     {
+        /// <summary>
+        /// 使用PBKDF2對密碼加密，回傳salt+hash的字串
+        /// </summary>
         public static string HashPassword(string password)
         {
             // 產生隨機 Salt
@@ -18,7 +21,7 @@ namespace OrderSystem.Services
             var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 10000);
             byte[] hash = pbkdf2.GetBytes(20);
 
-            // 合併 Salt + Hash
+            // 合併 Salt(放前16) + Hash(放後20)
             byte[] hashBytes = new byte[36];
             Array.Copy(salt, 0, hashBytes, 0, 16);
             Array.Copy(hash, 0, hashBytes, 16, 20);
@@ -27,6 +30,10 @@ namespace OrderSystem.Services
             return Convert.ToBase64String(hashBytes);
         }
 
+        /// <summary>
+        /// 驗證使用者輸入的密碼是否與資料庫中儲存的雜湊密碼相符
+        /// </summary>
+        /// <param name="storedHash">資料庫中儲存的密碼雜湊</param>
         public static bool VerifyPassword(string password, string storedHash)
         {
             byte[] hashBytes = Convert.FromBase64String(storedHash);

@@ -7,7 +7,7 @@ namespace OrderSystem.Models.ViewModels
 {
     public class MenuViewModel
     {
-        public string account { get; set; }
-        public string role { get; set; } // Admin / User
+        public string account { get; set; } // 帳號
+        public string role    { get; set; } // 角色權限(Admin / User)
     }
 }

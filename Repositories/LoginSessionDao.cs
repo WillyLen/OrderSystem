@@ -12,8 +12,11 @@ namespace OrderSystem.Services
 {
     public class LoginSessionDao
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString; // Oracle DB connection string(存在Web.config)
 
+        /// <summary>
+        /// Insert LoginSession到資料庫
+        /// </summary>
         public void Insert(LoginSession session)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -31,6 +34,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 用SessionId取得LoginSession
+        /// </summary>
         public LoginSession GetBySessionId(string sessionId)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -40,6 +46,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 用SessionId標記LoginSession為已使用
+        /// </summary>
         public void MarkAsUsedBySessionId(string sessionId)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -49,6 +58,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 將Account綁定到此SessionId的LoginSession
+        /// </summary>
         public void MarkAccount(string sessionId, string account)
         {
             using (IDbConnection db = new OracleConnection(connectionString))

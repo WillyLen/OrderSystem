@@ -12,8 +12,11 @@ namespace OrderSystem.Services
 {
     public class JwtHelper
     {
-        private static string secretKey = ConfigurationManager.AppSettings["JwtSecretKey"];
+        private static string secretKey = ConfigurationManager.AppSettings["JwtSecretKey"]; // 從Web.config取得密鑰
 
+        /// <summary>
+        /// 產生JWT Token，時限為30分鐘(過期會使用Refresh Token重新送一組)
+        /// </summary>
         public static string GenerateToken(string account, string role, int expireMinutes = 30)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -31,17 +34,20 @@ namespace OrderSystem.Services
             return tokenHandler.WriteToken(token);
         }
 
+        /// <summary>
+        /// 驗證Token
+        /// </summary>
         public static ClaimsPrincipal ValidateToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(secretKey);
-            var parameters = new TokenValidationParameters
+            var parameters = new TokenValidationParameters 
             {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ClockSkew = TimeSpan.Zero
+                ValidateIssuerSigningKey = true,                  // 是否驗證簽章密鑰
+                IssuerSigningKey = new SymmetricSecurityKey(key), // 使用的簽章密鑰
+                ValidateIssuer = false,                           // 是否驗證發行者
+                ValidateAudience = false,                         // 是否驗證接收者
+                ClockSkew = TimeSpan.Zero                         // 時間誤差容許範圍(此處是0)
             };
             return tokenHandler.ValidateToken(token, parameters, out _);
         }

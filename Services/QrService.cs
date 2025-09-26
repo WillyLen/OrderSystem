@@ -12,9 +12,12 @@ using System.Web.Mvc;
 
 namespace OrderSystem.Services
 {
+    /// <summary>
+    /// 產生連結至登入頁的QR Code
+    /// </summary>
     public class QrService
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString;
+        LoginSessionDao dao = new LoginSessionDao();
         public (string, string, LoginSession) GenerateQRCode()
         {
             // 建立 LoginSession 資料
@@ -29,19 +32,7 @@ namespace OrderSystem.Services
 
 
             // 儲存到資料庫
-            using (IDbConnection db = new OracleConnection(connectionString))
-            {
-                string insertSql = @"INSERT INTO TR04.LoginSessions (SessionId, Account, Expiry, IsUsed, CreatedAt)
-                                     VALUES (:SessionId, :Account, :Expiry, :IsUsed, :CreatedAt)";
-                db.Execute(insertSql, new
-                {
-                    SessionId = loginSession.sessionId,
-                    Account = loginSession.account,
-                    Expiry = loginSession.expiry,
-                    IsUsed = loginSession.isUsed ? 1 : 0,
-                    CreatedAt = loginSession.createdAt
-                });
-            }
+            dao.Insert(loginSession);
 
             // 產生 QR Code
             string qrText = $"https://localhost:44337/Auth/Login?sessionId={loginSession.sessionId}";

@@ -11,8 +11,11 @@ namespace OrderSystem.Services
 {
     public class OtpDao
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString; // Oracle DB connection string(存在Web.config)
 
+        /// <summary>
+        /// Insert Otp到資料庫
+        /// </summary>
         public void InsertOtp(string sessionId, byte[] secret, int expiryTime)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -29,6 +32,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 用SessionId取得對應之Otp的Secret
+        /// </summary>
         public byte[] GetSecretBySessionId(string sessionId)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -38,7 +44,10 @@ namespace OrderSystem.Services
             }
         }
 
-        public void DeleteOtp(string sessionId)
+        /// <summary>
+        /// 用SessionId刪除對應之Otp(用於登入後清除資料及畫面重整後避免綁到同一SessionId)
+        /// </summary>
+        public void DeleteOtpBySessionId(string sessionId)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
             {

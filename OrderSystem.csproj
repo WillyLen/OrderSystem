@@ -204,7 +204,6 @@
     <Compile Include="Repositories\RefreshTokenDao.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\JWTHelper.cs" />
-    <Compile Include="Services\Logout.cs" />
     <Compile Include="Repositories\OtpDao.cs" />
     <Compile Include="Services\OtpService.cs" />
     <Compile Include="Services\OtpTotpService.cs" />

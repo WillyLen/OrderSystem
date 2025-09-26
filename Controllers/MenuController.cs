@@ -20,12 +20,12 @@ namespace OrderSystem.Controllers
 
             if (string.IsNullOrEmpty(token))
             {
-                // 嘗試使用 Refresh Token 續期
+                // 使用 Refresh Token 續期
                 var refreshToken = Request.Cookies["refresh_token"]?.Value;
                 if (!string.IsNullOrEmpty(refreshToken))
                 {
                     var dao = new RefreshTokenDao();
-                    var account = dao.GetAccountByToken(refreshToken); // 你需要實作這個方法
+                    var account = dao.GetAccountByToken(refreshToken);
                     if (account != null)
                     {
                         var user = new UserDao().GetUserByAccount(account);

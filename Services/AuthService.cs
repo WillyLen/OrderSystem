@@ -7,6 +7,9 @@ namespace OrderSystem.Services
 {
     public class AuthService
     {
+        /// <summary>
+        /// 帳號密碼驗證
+        /// </summary>
         public bool LoginAuthCheck(string account, string password)
         {
             var dao = new UserDao();
@@ -18,6 +21,9 @@ namespace OrderSystem.Services
             return PasswordHasher.VerifyPassword(password, user.password);
         }
 
+        /// <summary>
+        /// 註冊資訊檢查
+        /// </summary>
         public string RegisterCheck(string email, string account, string password)
         {
             var dao = new UserDao();

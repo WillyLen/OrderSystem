@@ -12,8 +12,11 @@ namespace OrderSystem.Services
 {
     public class UserDao
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString; // Oracle DB connection string(存在Web.config)
 
+        /// <summary>
+        /// 用Account取得使用者資料
+        /// </summary>
         public User GetUserByAccount(string account)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -25,6 +28,10 @@ namespace OrderSystem.Services
                 return user;
             }
         }
+
+        /// <summary>
+        /// 新增使用者
+        /// </summary>
         public void AddUser(User user)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -42,6 +49,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 檢查帳號是否重複
+        /// </summary>
         public bool VerifyDuplicateAccount(string account)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -54,6 +64,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 檢查Email是否重複
+        /// </summary>
         public bool VerifyDuplicateEmail(string email)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -66,6 +79,9 @@ namespace OrderSystem.Services
             }
         }
 
+        /// <summary>
+        /// 將TOTP密鑰與啟用狀態更新到使用者資料
+        /// </summary>
         public void UpdateTotp(string account, string base32Secret, bool enabled)
         {
             using (IDbConnection db = new OracleConnection(connectionString))

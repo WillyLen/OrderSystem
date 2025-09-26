@@ -16,6 +16,9 @@ namespace OrderSystem.Services
 
         private readonly OtpDao otpDao = new OtpDao();
 
+        /// <summary>
+        /// 產生 OTP 並儲存到資料庫
+        /// </summary>
         public OtpEnrollment GenerateOtp(string sessionId)
         {
             // 產生 OTP Secret
@@ -35,6 +38,9 @@ namespace OrderSystem.Services
             };
         }
 
+        /// <summary>
+        /// 從資料庫取得OTP資訊來驗證輸入之OTP是否正確
+        /// </summary>
         public bool ValidateOtp(string sessionId, string inputOtp)
         {
             // 從資料庫取得 Secret
@@ -45,9 +51,13 @@ namespace OrderSystem.Services
             var totp = new Totp(secret, step: 60);
             return totp.VerifyTotp(inputOtp, out long timeStepMatched, VerificationWindow.RfcSpecifiedNetworkDelay);
         }
+
+        /// <summary>
+        /// 刪除已使用或過期的OTP記錄(用於成功登入後以及重新產生OTP的畫面)
+        /// </summary>
         public void DeleteOtp(string sessionId)
         {
-            otpDao.DeleteOtp(sessionId);
+            otpDao.DeleteOtpBySessionId(sessionId);
         }
 
     }

@@ -11,8 +11,11 @@ namespace OrderSystem.Repositories
 {
     public class RefreshTokenDao
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["OET8con"].ConnectionString; // Oracle DB connection string(存在Web.config)
 
+        /// <summary>
+        /// 用Token去找出對應的帳號
+        /// </summary>
         public string GetAccountByToken(string token)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -23,7 +26,9 @@ namespace OrderSystem.Repositories
             }
         }
 
-
+        /// <summary>
+        /// 儲存Refresh Token到資料庫
+        /// </summary>
         public void SaveToken(string account, string token, DateTime expiry)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
@@ -41,7 +46,10 @@ namespace OrderSystem.Repositories
             }
         }
 
-        public string GetToken(string account)
+        /// <summary>
+        /// 用Account取得對應的Refresh Token(且未過期)
+        /// </summary>
+        public string GetTokenByAccount(string account)
         {
             using (IDbConnection db = new OracleConnection(connectionString))
             {
@@ -50,6 +58,10 @@ namespace OrderSystem.Repositories
             }
         }
 
+        /// <summary>
+        /// 用於登出時刪除對應帳號的Refresh Token
+        /// </summary>
+        /// <param name="account"></param>
         public void DeleteToken(string account)
         {
             using (IDbConnection db = new OracleConnection(connectionString))

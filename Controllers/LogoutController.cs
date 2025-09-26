@@ -9,6 +9,9 @@ namespace OrderSystem.Controllers
 {
     public class LogoutController : Controller
     {
+        /// <summary>
+        /// 清除 Session 及 Cookie，並刪除資料庫中的 Refresh Token後導向登出成功頁面
+        /// </summary>
         public ActionResult Logout()
         {
             Session.Clear();
@@ -32,6 +35,10 @@ namespace OrderSystem.Controllers
 
             return View();
         }
+
+        /// <summary>
+        /// 逾時強制登出頁面
+        /// </summary>
         public ActionResult SessionTimeOut()
         {
             return View();

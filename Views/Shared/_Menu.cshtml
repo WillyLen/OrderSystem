@@ -18,7 +18,6 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    @RenderSection("Body", required: false)
     <!-- Modal -->
     <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -36,10 +35,9 @@
             </div>
         </div>
     </div>
-    <!-- wrapper class 請填寫六大家族class名稱 -->
     <div id="wrapper" class="">
         <div id="page-container">
-            <a id="anchor-pagetop" name="anchor-pagetop">錨點/anchor</a><!--錨點-頁首anchor -->
+            <a id="anchor-pagetop" name="anchor-pagetop">錨點/anchor</a><
             <header id="header">
                 <button id="btn-main-nav" data-toggle="offcanvas" type="button"></button>
 
@@ -58,19 +56,18 @@
                     <ul class="navbar-nav">
                         <li>
                             <a href="#" class="  hdsub-userinfo" data-bs-toggle="modal" data-bs-target="#modal-userinfo">
-                                <span class="hdsub-user-empId">CI31245</span>
-                                <span class="hdsub-user-empName">李大仁</span>
+                                <span class="hdsub-user-empName">@ViewBag.Account</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="">English</a>
                         </li>
-                        <li>
+                        @*<li>
                             <a href="#" class="">操作手冊</a>
                         </li>
                         <li>
                             <a href="#" class="">模擬連結</a>
-                        </li>
+                        </li>*@
                         <li>
                             <a href="#" class="  hdsub-log-out" data-bs-toggle="modal" data-bs-target="#logoutModal">登出</a>
                         </li>
@@ -99,7 +96,7 @@
 
                         <div id="content-body">
 
-
+                            @RenderSection("Body", required: false)
 
 
                         </div><!-- content-body -->
@@ -440,20 +437,12 @@
                     <table class="table  table-bordered">
                         <tbody>
                             <tr>
-                                <td>姓名</td>
-                                <td>李大仁</td>
+                                <td>帳號</td>
+                                <td>@ViewBag.Account</td>
                             </tr>
                             <tr>
-                                <td>員工號</td>
-                                <td>CI31245</td>
-                            </tr>
-                            <tr>
-                                <td>所屬單位</td>
-                                <td>資訊管理處/品質管理部</td>
-                            </tr>
-                            <tr>
-                                <td>使用身份</td>
-                                <td>一般使用者</td>
+                                <td>使用者身份</td>
+                                <td>@ViewBag.Role</td>
                             </tr>
                         </tbody>
                     </table>

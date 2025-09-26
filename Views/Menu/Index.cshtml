@@ -1,4 +1,4 @@
-﻿
+﻿@model OrderSystem.Models.ViewModels.MenuViewModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Menu.cshtml";
@@ -6,5 +6,12 @@
 
 
 @section Body {
-    <h2>Index</h2>
+    @if (ViewBag.Role == "Admin")
+    {
+        <h2>Admin</h2>
+    }
+    else
+    {
+        <h2>User</h2>
+    }
 }

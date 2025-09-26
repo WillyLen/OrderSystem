@@ -1,5 +1,6 @@
 ﻿using OrderSystem.Models;
 using OrderSystem.Models.ViewModels;
+using OrderSystem.Repositories;
 using OrderSystem.Services;
 using QRCoder;
 using System;
@@ -70,6 +71,38 @@ namespace OrderSystem.Controllers
         {
             var dao = new LoginSessionDao();
             var session = dao.GetBySessionId(model.SessionId);
+
+            var userDao = new UserDao();
+            var user = userDao.GetUserByAccount(model.Account);
+
+
+            // 登入成功後產生 JWT
+            string token = JwtHelper.GenerateToken(user.account, user.role);
+
+            // 儲存 JWT 到 Cookie（HttpOnly + SameSite）
+            var cookie = new HttpCookie("jwt", token)
+            {
+                HttpOnly = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.Now.AddMinutes(30)
+            };
+            Response.Cookies.Add(cookie);
+
+            // 登入成功後產生 Refresh Token
+            string refreshToken = Guid.NewGuid().ToString();
+            DateTime refreshExpiry = DateTime.Now.AddDays(7);
+            new RefreshTokenDao().SaveToken(user.account, refreshToken, refreshExpiry);
+
+            // 儲存到 Cookie
+            var refreshCookie = new HttpCookie("refresh_token", refreshToken)
+            {
+                HttpOnly = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = refreshExpiry
+            };
+            Response.Cookies.Add(refreshCookie);
+
+
 
             if (!IsSessionValid(session, model.SessionId))
                 return RedirectToAction("Index", "Auth");

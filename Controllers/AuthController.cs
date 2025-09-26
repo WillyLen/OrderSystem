@@ -84,18 +84,17 @@ namespace OrderSystem.Controllers
             }
 
             // 標記 session 已綁帳號
-            dao.MarkAsUsedBySessionId(session.sessionId);      // :contentReference[oaicite:11]{index=11}
-            dao.MarkAccount(session.sessionId, model.Account); // :contentReference[oaicite:12]{index=12}
+            dao.MarkAccount(session.sessionId, model.Account);
 
-            // NEW: 改導向到「選擇第二因子」頁
-            return RedirectToAction("ChooseMfa", new { sessionId = model.SessionId });
+            // NEW: 改導向到QrcodeAuth
+            return RedirectToAction("QrcodeAuth", new { sessionId = model.SessionId });
         }
         // [GET] /Auth/ChooseMfa?sessionId=...
-        public ActionResult ChooseMfa(string sessionId)
+        public ActionResult QrcodeAuth(string sessionId)
         {
             var sessDao = new LoginSessionDao();
             var sess = sessDao.GetBySessionId(sessionId);
-            //if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
+            if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
 
             var userDao = new UserDao();
             var user = userDao.GetUserByAccount(sess.account); // 讀使用者:contentReference[oaicite:1]{index=1}
@@ -111,7 +110,6 @@ namespace OrderSystem.Controllers
                 TempData["__EnrollSecret"] = base32;
                 ViewBag.ManualKey = base32;
 
-                // 🔽 這段就是把 URI 轉成 QR 圖（參考你在 QrService 的寫法:contentReference[oaicite:2]{index=2}）
                 using (var qrGen = new QRCodeGenerator())
                 using (var qrData = qrGen.CreateQrCode(uri, QRCodeGenerator.ECCLevel.Q))
                 using (var pngQr = new PngByteQRCode(qrData))
@@ -131,7 +129,7 @@ namespace OrderSystem.Controllers
         {
             var sessDao = new LoginSessionDao();
             var sess = sessDao.GetBySessionId(sessionId);
-            //if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
+            if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
 
             var userDao = new UserDao();
             var user = userDao.GetUserByAccount(sess.account);
@@ -140,20 +138,20 @@ namespace OrderSystem.Controllers
             if (string.IsNullOrEmpty(base32))
             {
                 TempData["MfaError"] = "啟用流程已逾時，請重新產生 QR。";
-                return RedirectToAction("ChooseMfa", new { sessionId });
+                return RedirectToAction("QrcodeAuth", new { sessionId });
             }
 
             var totpSvc = new OtpTotpService();
             if (!totpSvc.Verify(base32, code))
             {
                 TempData["MfaError"] = "驗證碼錯誤，請再試一次。";
-                return RedirectToAction("ChooseMfa", new { sessionId });
+                return RedirectToAction("QrcodeAuth", new { sessionId });
             }
 
             // 開通信號：把 secret 寫進使用者，TwoFactorEnabled = 1
             userDao.UpdateTotp(user.account, base32, true);
             TempData["MfaInfo"] = "已成功啟用 Authenticator。";
-            return RedirectToAction("ChooseMfa", new { sessionId });
+            return RedirectToAction("QrcodeAuth", new { sessionId });
         }
 
         // [POST] /Auth/VerifyTotp  （已啟用者每次登入時輸入 6 碼）
@@ -163,7 +161,7 @@ namespace OrderSystem.Controllers
         {
             var sessDao = new LoginSessionDao();
             var sess = sessDao.GetBySessionId(sessionId);
-            //if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
+            if (!IsSessionValid(sess, sessionId)) return RedirectToAction("Index");
 
             var userDao = new UserDao();
             var user = userDao.GetUserByAccount(sess.account);
@@ -171,15 +169,18 @@ namespace OrderSystem.Controllers
             if (!(user?.TwoFactorEnabled ?? false) || string.IsNullOrEmpty(user.TotpSecret))
             {
                 TempData["MfaError"] = "尚未啟用 Authenticator。";
-                return RedirectToAction("ChooseMfa", new { sessionId });
+                return RedirectToAction("QrcodeAuth", new { sessionId });
             }
 
             var totpSvc = new OtpTotpService();
             if (!totpSvc.Verify(user.TotpSecret, code))
             {
                 TempData["MfaError"] = "TOTP 驗證失敗。";
-                return RedirectToAction("ChooseMfa", new { sessionId });
+                return RedirectToAction("QrcodeAuth", new { sessionId });
             }
+
+            // 標記 session 已使用過
+            sessDao.MarkAsUsedBySessionId(sess.sessionId);
 
             // 通過：登入完成
             return RedirectToAction("Index", "Menu");
@@ -263,11 +264,14 @@ namespace OrderSystem.Controllers
         [HttpPost]
         public ActionResult VerifyOtp(string sessionId, string inputOtp)
         {
+            var sessDao = new LoginSessionDao();
+            var sess = sessDao.GetBySessionId(sessionId);
             var otpService = new OtpService();
             bool isValid = otpService.ValidateOtp(sessionId, inputOtp);
 
             if (isValid)
             {
+                sessDao.MarkAsUsedBySessionId(sess.sessionId); // 標記 session 已使用過
                 otpService.DeleteOtp(sessionId); // 驗證成功後刪除 OTP
                 return RedirectToAction("Index", "Menu");
             }

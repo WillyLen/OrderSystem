@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Authentication";
+    Layout = "~/Views/Shared/_Auth.cshtml";
+    var sessionId = (string)ViewBag.SessionId;
+    bool totpEnabled = ViewBag.TotpEnabled == true;
+    string otpAuthUri = ViewBag.OtpAuthUri as string;  // 未啟用時才有
+    string manualKey = ViewBag.ManualKey as string;
+}
+
+@section scripts {
+
+}
+
+@section Title {
+    <h1 id="page-title-mainlang" class="pt-tw-text10">OTP 驗證</h1>
+    <p id="page-title-sublang" class="">OTP Verification</p>
+}
+
+@section Main {
+    <div class="d-flex justify-content-center align-items-center mb-2">
+        @if (TempData["MfaError"] != null)
+        {
+            <div class="alert alert-danger">@TempData["MfaError"]</div>
+        }
+        @if (TempData["MfaInfo"] != null)
+        {
+            <div class="alert alert-info">@TempData["MfaInfo"]</div>
+        }
+    </div>
+    @if (!totpEnabled)
+    {
+        <div class="d-flex justify-content-center align-items-center mb-2">
+            <p>
+                尚未啟用。請用Authenticator掃描QRCode，或輸入金鑰。
+            </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mb-2">
+            @if (ViewBag.QrDataUrl != null)
+            {
+                <div style="margin:12px 0">
+                    <img src="@ViewBag.QrDataUrl" alt="Authenticator QR" width="220" height="220" />
+                </div>
+            }
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <p><code>@manualKey</code></p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            @using (Html.BeginForm("EnableTotp", "Auth", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="sessionId" value="@((string)ViewBag.SessionId)" />
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <label for="code">OTP：</label>
+                    <input type="text" name="code" maxlength="6" autofocus required />
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn btn-primary">確認啟用</button>
+                </div>
+            }
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-4 pb-2">
+            <p>
+                <a href="@Url.Action("ShowOtp", "Auth", new { sessionId = @ViewBag.SessionId })">切換登入方式</a>
+            </p>
+        </div>
+    }
+    else
+    {
+        <div class="d-flex justify-content-center align-items-center mb-5">
+            <p>
+                請輸入 Authenticator App 顯示的 6 碼完成登入。
+            </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            @using (Html.BeginForm("VerifyTotp", "Auth", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="sessionId" value="@((string)ViewBag.SessionId)" />
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <label for="code">OTP：</label>
+                    <input type="text" name="code" maxlength="6" autofocus required />
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn btn-primary">驗證</button>
+                </div>
+            }
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-4 pb-2">
+            <p>
+                <a href="@Url.Action("ShowOtp", "Auth", new { sessionId = @ViewBag.SessionId })">切換登入方式</a>
+            </p>
+        </div>
+    }
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage as string))
+    {
+        <div class="alert alert-danger mt-5 d-flex justify-content-center align-items-center" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+}

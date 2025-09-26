@@ -414,7 +414,7 @@
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Shared\_Logout.cshtml" />
     <Content Include="Views\Menu\Index.cshtml" />
-    <Content Include="Views\Auth\ChooseMfa.cshtml" />
+    <Content Include="Views\Auth\QrcodeAuth.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

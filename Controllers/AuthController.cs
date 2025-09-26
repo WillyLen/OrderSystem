@@ -251,6 +251,7 @@ namespace OrderSystem.Controllers
             }
 
             var otpService = new OtpService();
+            otpService.DeleteOtp(sessionId);
             var otpModel = otpService.GenerateOtp(sessionId); // 產生並儲存 OTP 到 DB
 
             if (TempData["ErrorMessage"] != null)

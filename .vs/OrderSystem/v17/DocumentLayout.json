@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|C:\\Users\\649797\\source\\repos\\OrderSystem\\views\\auth\\qrcodeauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\qrcodeauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|C:\\Users\\649797\\source\\repos\\OrderSystem\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\otpenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\views\\auth\\qrcodeauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:views\\auth\\qrcodeauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|C:\\Users\\649797\\source\\repos\\OrderSystem\\services\\otptotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:services\\otptotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|c:\\users\\649797\\source\\repos\\ordersystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|C:\\Users\\649797\\source\\repos\\OrderSystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{6888E682-FF8B-40E0-A85D-CB7BA2162E94}|OrderSystem.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -87,8 +87,7 @@
               "RelativeToolTip": "Services\\OtpTotpService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAMwBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:16:47.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T15:16:47.74Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:14:10.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T15:14:10.295Z"
             },
             {
               "$type": "Document",
@@ -111,14 +109,14 @@
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAiwAkBAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAgwP0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T14:57:11.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserDao.cs",
               "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Repositories\\UserDao.cs",
               "RelativeDocumentMoniker": "Repositories\\UserDao.cs",
@@ -126,25 +124,24 @@
               "RelativeToolTip": "Repositories\\UserDao.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAswEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T15:15:44.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T15:15:44.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "QrcodeAuth.cshtml",
-              "DocumentMoniker": "C:\\Users\\649797\\Source\\Repos\\OrderSystem\\Views\\Auth\\QrcodeAuth.cshtml",
+              "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\QrcodeAuth.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\QrcodeAuth.cshtml",
-              "ToolTip": "C:\\Users\\649797\\Source\\Repos\\OrderSystem\\Views\\Auth\\QrcodeAuth.cshtml",
+              "ToolTip": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\QrcodeAuth.cshtml",
               "RelativeToolTip": "Views\\Auth\\QrcodeAuth.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD8AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAD8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-25T15:20:13.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "OtpEnrollment.cs",
               "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Models\\OtpEnrollment.cs",
               "RelativeDocumentMoniker": "Models\\OtpEnrollment.cs",
@@ -152,12 +149,11 @@
               "RelativeToolTip": "Models\\OtpEnrollment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T14:59:14.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T14:59:14.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ShowOtp.cshtml",
               "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Views\\Auth\\ShowOtp.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\ShowOtp.cshtml",
@@ -165,12 +161,11 @@
               "RelativeToolTip": "Views\\Auth\\ShowOtp.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T14:58:15.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T14:58:15.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OtpService.cs",
               "DocumentMoniker": "C:\\Users\\649797\\source\\repos\\OrderSystem\\Services\\OtpService.cs",
               "RelativeDocumentMoniker": "Services\\OtpService.cs",
@@ -178,8 +173,7 @@
               "RelativeToolTip": "Services\\OtpService.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAMwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T14:57:47.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T14:57:47.052Z"
             },
             {
               "$type": "Document",
